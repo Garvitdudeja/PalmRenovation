@@ -29,8 +29,8 @@ const services = [
   },
   {
     title: 'Room Addition',
-    description: 'Create more living space with our expert home renovation and addition services. Whether you need an extra bedroom, home office, or family room, we'll expand your home in the Palm Beach area.',
-    details: 'Our custom room designs maximize your property's potential. Get personalized spaces that match your home's style while boosting its market value.',
+    description: 'Create more living space with our expert home renovation and addition services. Whether you need an extra bedroom, home office, or family room, we will expand your home in the Palm Beach area.',
+    details: 'Our custom room designs maximize your property\'s potential. Get personalized spaces that match your home\'s style while boosting its market value.',
     experience: 'Choose from a single-room addition, second-story expansion, or detached structure. We handle everything from design and permits to construction and finishing touches.',
     link: '/services/room-addition',
     image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Room-Addition-420x315.jpg.webp',
@@ -45,8 +45,8 @@ const services = [
   },
   {
     title: 'Design & Architectural Planning',
-    description: 'Palm Renovate's experts will help you find the best solution for any problem. You'll know exactly what will happen, how much it will cost, and how long it will take.',
-    details: 'First, we'll discuss what you want. Then, we'll show you different ideas on a computer and on paper before we start building.',
+    description: 'Palm Renovate\'s experts will help you find the best solution for any problem. You will know exactly what will happen, how much it will cost, and how long it will take.',
+    details: 'First, we will discuss what you want. Then, we will show you different ideas on a computer and on paper before we start building.',
     experience: 'This helps save time and money, reduces stress, and ensures you get everything you want.',
     link: '/services/design-architectural-planning',
     image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Design-Architectural-Planning-420x315.jpg.webp',
