@@ -17,7 +17,7 @@ const services = [
     details: 'We handle everything including initial design plans, helping you choose materials, managing timelines, and overseeing all contractors, from cabinet installers to electricians.',
     experience: 'Our kitchen remodeling team brings 15 years of local experience to every project. We offer options for every budget, from cabinet refacing to designing complete custom kitchens.',
     link: '/services/kitchen-remodeling',
-    image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Kitchen-Remodeling-420x315.jpg.webp',
+    image: '/images/Kitchen-Remodeling-420x315.jpg.webp',
   },
   {
     title: 'Bathroom Remodeling',
@@ -25,7 +25,7 @@ const services = [
     details: 'Choose from tub-to-shower conversions, walk-in shower renovations, accessible bathroom renovations—we do it all.',
     experience: 'Our complete renovation process includes demolition, plumbing updates, electrical work, tiling, fixture installation, and final touches. Our licensed contractors ensure quality at every step.',
     link: '/services/bathroom-remodeling',
-    image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Bathroom-Remodeling-420x315.jpg.webp',
+    image: '/images/Bathroom-Remodeling-420x315.jpg.webp',
   },
   {
     title: 'Room Addition',
@@ -33,7 +33,7 @@ const services = [
     details: 'Our custom room designs maximize your property\'s potential. Get personalized spaces that match your home\'s style while boosting its market value.',
     experience: 'Choose from a single-room addition, second-story expansion, or detached structure. We handle everything from design and permits to construction and finishing touches.',
     link: '/services/room-addition',
-    image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Room-Addition-420x315.jpg.webp',
+    image: '/images/Room-Addition-420x315.jpg.webp',
   },
   {
     title: 'Home Remodeling',
@@ -41,7 +41,7 @@ const services = [
     details: 'Every room will make you feel special and enhance your everyday life, making it easier and more enjoyable. We can make that happen!',
     experience: 'We take pleasure in making your home a delight. From helping you choose design options to securing the best supplies at competitive prices, to building optimal functionality into beautiful form that matches your lifestyle.',
     link: '/services/complete-home-remodeling',
-    image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Complete-Home-Remodeling-420x315.jpg.webp',
+    image: '/images/Complete-Home-Remodeling-420x315.jpg.webp',
   },
   {
     title: 'Design & Architectural Planning',
@@ -49,7 +49,7 @@ const services = [
     details: 'First, we will discuss what you want. Then, we will show you different ideas on a computer and on paper before we start building.',
     experience: 'This helps save time and money, reduces stress, and ensures you get everything you want.',
     link: '/services/design-architectural-planning',
-    image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Design-Architectural-Planning-420x315.jpg.webp',
+    image: '/images/Design-Architectural-Planning-420x315.jpg.webp',
   },
   {
     title: 'Accessory Dwelling Units',
@@ -57,7 +57,7 @@ const services = [
     details: 'From a bedroom and kitchenette that shares a bathroom (Junior ADU) to a separate building with everything needed for comfortable living.',
     experience: 'We have designs ready for whatever you need. Some are universally accessible, some are built extra strong against hurricanes, and some can provide an additional income stream through rental. We can also combine these specialties.',
     link: '/services/accessory-dwelling-units',
-    image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Room-Addition-420x315.jpg.webp',
+    image: '/images/Room-Addition-420x315.jpg.webp',
   },
 ];
 
