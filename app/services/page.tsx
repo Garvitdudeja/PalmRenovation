@@ -33,7 +33,7 @@ const services = [
     details: 'Our custom room designs maximize your property\'s potential. Get personalized spaces that match your home\'s style while boosting its market value.',
     experience: 'Choose from a single-room addition, second-story expansion, or detached structure. We handle everything from design and permits to construction and finishing touches.',
     link: '/services/room-addition',
-    image: '/images/Room-Addition-420x315.jpg.webp',
+    image: '/images/Room-Addition-420x315.webp',
   },
   {
     title: 'Home Remodeling',
@@ -57,7 +57,7 @@ const services = [
     details: 'From a bedroom and kitchenette that shares a bathroom (Junior ADU) to a separate building with everything needed for comfortable living.',
     experience: 'We have designs ready for whatever you need. Some are universally accessible, some are built extra strong against hurricanes, and some can provide an additional income stream through rental. We can also combine these specialties.',
     link: '/services/accessory-dwelling-units',
-    image: '/images/Room-Addition-420x315.jpg.webp',
+    image: '/images/Room-Addition-420x315.webp',
   },
 ];
 
