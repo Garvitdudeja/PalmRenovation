@@ -37,14 +37,14 @@ const Hero = () => {
       <div className="relative h-full flex items-center justify-center px-4 md:px-8 z-10">
         <div className="text-center text-white max-w-4xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Let&apos;s Make Your Dream a Reality
+            Let’s Build Your Dream, Together
           </h1>
           <blockquote className="text-xl md:text-2xl lg:text-3xl italic mb-4 leading-relaxed font-light">
-            &quot;Building is not just about shelter. It&apos;s about realizing dreams, making statements, creating spaces where life happens.&quot;
+            &quot;From concept to completion, we turn your ideas into lasting spaces built to inspire.&quot;
           </blockquote>
-          <p className="text-base md:text-lg lg:text-xl">
+          {/* <p className="text-base md:text-lg lg:text-xl">
             — John &quot;Architect&quot; Aarons
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
