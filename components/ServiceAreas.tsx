@@ -18,7 +18,7 @@ const ServiceAreas = () => {
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-8 text-center">
-          Remodeling Services Across South Florida and Beyond
+          Home Remodeling Services Throughout South Florida and Beyond
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
           {areas.map((area) => (

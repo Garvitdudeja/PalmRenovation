@@ -1,18 +1,18 @@
 const testimonials = [
   {
-    name: 'Jessica M.',
+    name: 'Sarah M.',
     rating: 5,
-    review: "After years of dreaming about a modern, functional kitchen, I finally decided to take the plunge with Palm Renovate. From the initial consultation to the final reveal, the team was absolutely outstanding. They listened to my needs, provided creative and practical suggestions, and kept me informed every step of the way. The project was completed on time and within budget, which was a huge relief. My new kitchen is everything I hoped for and more. It's not only beautiful but also incredibly functional. The quality of workmanship is top-notch, and the attention to detail is evident in every corner. I highly recommend Palm Renovate to anyone looking to transform their kitchen. They have truly made my dream a reality.",
+    review: "After years of envisioning a modern, functional kitchen, I finally decided to work with Palm Renovate. From the initial consultation to the final reveal, the team exceeded all my expectations. They listened carefully to my needs, offered creative and practical solutions, and kept me informed throughout the entire process. The project was completed on schedule and within budget, which was a tremendous relief. My new kitchen is everything I dreamed of and more. It's not only beautiful but also incredibly functional. The craftsmanship is exceptional, and the attention to detail is visible in every aspect. I highly recommend Palm Renovate to anyone looking to transform their kitchen. They truly brought my vision to life.",
   },
   {
-    name: 'Brian T.',
+    name: 'Michael T.',
     rating: 5,
-    review: "Choosing Palm Renovate for our bathroom remodel was the best decision we could have made. Our outdated bathroom was in desperate need of an upgrade, and the Palm Renovate team turned it into a luxurious oasis. They were professional, knowledgeable, and very responsive to our questions and concerns throughout the process. The design team was fantastic, helping us select materials and fixtures that fit our style and budget. The craftsmanship is impeccable, and the finished product is beyond our expectations. The project was completed on schedule, and the work area was always kept clean and organized. We are absolutely in love with our new bathroom and wouldn't hesitate to use Palm Renovate for future projects.",
+    review: "Selecting Palm Renovate for our bathroom renovation was one of the best decisions we've made. Our outdated bathroom desperately needed an upgrade, and the Palm Renovate team transformed it into a luxurious retreat. They were professional, knowledgeable, and extremely responsive to all our questions and concerns throughout the process. The design team was excellent, helping us choose materials and fixtures that matched our style and budget perfectly. The craftsmanship is outstanding, and the finished product exceeded our expectations. The project was completed on schedule, and the work area was always kept clean and organized. We are absolutely thrilled with our new bathroom and wouldn't hesitate to use Palm Renovate for future projects.",
   },
   {
-    name: 'Elena R.',
+    name: 'Amanda R.',
     rating: 5,
-    review: "We had the pleasure of working with Palm Renovate for the construction of our new home, and the experience was nothing short of exceptional. From the initial design phase to the construction and final walkthrough, the entire team demonstrated professionalism, expertise, and a commitment to quality. They were attentive to our vision and worked diligently to bring it to life, offering valuable advice and solutions to any challenges that arose. The project management was superb, with clear communication and updates throughout the process. The end result is a beautiful, well-constructed home that perfectly meets our needs and desires. We are deeply grateful to the Palm Renovate team for their hard work and dedication, and we highly recommend their services to anyone looking to build their dream home.",
+    review: "We had the pleasure of working with Palm Renovate for the construction of our new home, and the experience was absolutely exceptional. From the initial design phase through construction and the final walkthrough, the entire team demonstrated professionalism, expertise, and an unwavering commitment to quality. They were attentive to our vision and worked diligently to bring it to life, offering valuable advice and solutions whenever challenges arose. The project management was excellent, with clear communication and regular updates throughout the process. The end result is a beautiful, well-constructed home that perfectly meets our needs and desires. We are deeply grateful to the Palm Renovate team for their hard work and dedication, and we highly recommend their services to anyone looking to build their dream home.",
   },
 ];
 
@@ -31,7 +31,7 @@ const Testimonials = () => {
             Discover Why Our Customers Love Us
           </h2>
           <p className="text-lg text-charcoal-gray max-w-3xl mx-auto mb-4">
-            Take a look at what some of our satisfied customers have to say about their experience with Palm Renovate. We take pride in our work and always strive to provide high-quality services that exceed our customers&apos; expectations. Contact us today to learn more about our services, and how we can help you transform your home!
+            Read what our satisfied customers have to say about their experience with Palm Renovate. We take pride in our work and consistently strive to provide high-quality services that exceed our customers' expectations. Contact us today to learn more about our services and how we can help transform your home!
           </p>
           <div className="flex items-center justify-center gap-2 mb-8">
             <span className="text-3xl font-bold text-charcoal-gray">5.0</span>

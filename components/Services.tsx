@@ -5,37 +5,37 @@ import Image from 'next/image';
 const additionalServices = [
     {
         title: 'Kitchen Remodeling',
-        description: "We'll help you reinvent your kitchen with an improved design that transforms the space and customizes it into a kitchen that better serves you and your family.",
+        description: "We'll help you redesign your kitchen with an improved layout that transforms the space and customizes it into a kitchen that better serves you and your family.",
         link: '/services/kitchen-remodeling',
         image: '/images/Kitchen-Remodeling-420x315.jpg.webp',
     },
     {
         title: 'Bathroom Remodeling',
-        description: 'Upgrade your bathroom for comfort, convenience, and style with a new shower, flooring, lighting, and more. Consider a tub-to-shower conversion or create an accessible bathroom.',
+        description: 'Upgrade your bathroom for comfort, convenience, and style with a new shower, flooring, lighting, and more. Consider a tub-to-shower conversion or create an accessible bathroom design.',
         link: '/services/bathroom-remodeling',
         image: '/images/Bathroom-Remodeling-420x315.jpg.webp',
     },
     {
         title: 'Room Addition',
-        description: 'Need more space? Our team of remodeling contractors will help you expand your home with a bump out, sunroom addition, garage conversion, ADU, or second story addition.',
+        description: 'Need more space? Our team of remodeling contractors will help you expand your home with a bump-out, sunroom addition, garage conversion, ADU, or second-story addition.',
         link: '/services/room-addition',
         image: '/images/room-addition-420x315.jpg.webp',
     },
     {
         title: 'Complete Home Remodeling',
-        description: "Fall in love with your home all over again by home remodeling contractors that maximizes your home's potential and redesigns your living space for improved function and appeal.",
+        description: "Fall in love with your home all over again with home remodeling contractors that maximize your home's potential and redesign your living space for improved function and appeal.",
         link: '/services/complete-home-remodeling',
         image: '/images/General-Remodeling-420x315.jpg.webp',
     },
     {
         title: 'Design & Architectural Planning',
-        description: "As a residential remodeling company, Palm Renovate provides exceptional design and architectural services with excellent precision, creativity, and execution that makes all the difference.",
+        description: "As a residential remodeling company, Palm Renovate delivers exceptional design and architectural services with precision, creativity, and execution that makes all the difference.",
         link: '/services/design-architectural-planning',
         image: '/images/Design-Architectural-Planning-420x315.jpg.webp',
     },
     {
         title: 'All Our Services',
-        description: "Palm Renovate offers a wide selection of remodeling and renovation services in Palm Beach & Broward County.",
+        description: "Palm Renovate offers a comprehensive selection of remodeling and renovation services throughout Palm Beach & Broward County.",
         link: '/services',
         image: '/images/Kitchen-Remodeling-420x315.jpg.webp',
     },

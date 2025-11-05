@@ -4,7 +4,7 @@ const steps = [
   {
     number: '1',
     title: 'Consultation',
-    description: 'Begin with a personalized consultation where our team listens attentively to your vision, needs, and preferences. We believe in understanding your unique style to lay the foundation for a tailored renovation plan.',
+    description: 'Begin with a personalized consultation where our team listens attentively to your vision, needs, and preferences. We believe in understanding your unique style to lay the foundation for a customized renovation plan.',
     image: '/images/home-remodeling-miami-680x500.jpg.webp',
   },
   {
@@ -49,7 +49,7 @@ const FourSteps = () => {
           
           {/* Description */}
           <p className="text-lg text-charcoal-gray max-w-3xl mx-auto leading-relaxed">
-            Embark on a hassle-free journey with Palm Renovate as we guide you through four simple steps to bring your dream space to life.
+            Begin a stress-free journey with Palm Renovate as we guide you through four simple steps to bring your dream space to life.
           </p>
         </div>
       </div>

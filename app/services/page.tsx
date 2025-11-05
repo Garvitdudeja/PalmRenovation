@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 const services = [
   {
     title: 'Kitchen Remodeling',
-    description: 'Our kitchen remodeling services transform outdated kitchens into modern, functional spaces. As experienced renovation contractors, we create custom designs that match your style and the way that you use your kitchen.',
-    details: 'We handle everything including, initial design plans, helping you choose materials, managing timelines and overseeing all contractors, from cabinet installers to electricians.',
+    description: 'Our kitchen remodeling services transform outdated kitchens into modern, functional spaces. As experienced renovation contractors, we create custom designs that match your style and the way you use your kitchen.',
+    details: 'We handle everything including initial design plans, helping you choose materials, managing timelines, and overseeing all contractors, from cabinet installers to electricians.',
     experience: 'Our kitchen remodeling team brings 15 years of local experience to every project. We offer options for every budget, from cabinet refacing to designing complete custom kitchens.',
     link: '/services/kitchen-remodeling',
     image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Kitchen-Remodeling-420x315.jpg.webp',
@@ -22,40 +22,40 @@ const services = [
   {
     title: 'Bathroom Remodeling',
     description: 'Our bathroom renovation services create spaces that work better and look beautiful. From outdated layouts to limited storage, we solve your bathroom problems while adding the perfect finishing touches.',
-    details: 'Choose from tub to shower conversions, walk in shower renovations, accessible bathroom renovations, we do it all.',
+    details: 'Choose from tub-to-shower conversions, walk-in shower renovations, accessible bathroom renovations—we do it all.',
     experience: 'Our complete renovation process includes demolition, plumbing updates, electrical work, tiling, fixture installation, and final touches. Our licensed contractors ensure quality at every step.',
     link: '/services/bathroom-remodeling',
     image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Bathroom-Remodeling-420x315.jpg.webp',
   },
   {
     title: 'Room Addition',
-    description: 'Create more living space with our expert home renovation and addition services. Whether you need an extra bedroom, home office, or family room, we\'ll expand your home in the Palm Beach area.',
-    details: 'Our custom room designs maximize your property\'s potential. Get personalized spaces that match your home\'s style while boosting its market value.',
+    description: 'Create more living space with our expert home renovation and addition services. Whether you need an extra bedroom, home office, or family room, we'll expand your home in the Palm Beach area.',
+    details: 'Our custom room designs maximize your property's potential. Get personalized spaces that match your home's style while boosting its market value.',
     experience: 'Choose from a single-room addition, second-story expansion, or detached structure. We handle everything from design and permits to construction and finishing touches.',
     link: '/services/room-addition',
     image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Room-Addition-420x315.jpg.webp',
   },
   {
     title: 'Home Remodeling',
-    description: 'Imagine your home, but brighter, cleaner, and more modern.',
-    details: 'Every room will make you feel special and make your everyday life easier and more enjoyable. We can do that!',
-    experience: 'We enjoy making your home a delight. From helping you choose design options to getting you the best supplies at the best price, to building the best function into the best form for your lifestyle.',
+    description: 'Envision your home transformed into something brighter, cleaner, and more modern.',
+    details: 'Every room will make you feel special and enhance your everyday life, making it easier and more enjoyable. We can make that happen!',
+    experience: 'We take pleasure in making your home a delight. From helping you choose design options to securing the best supplies at competitive prices, to building optimal functionality into beautiful form that matches your lifestyle.',
     link: '/services/complete-home-remodeling',
     image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Complete-Home-Remodeling-420x315.jpg.webp',
   },
   {
     title: 'Design & Architectural Planning',
-    description: 'Palm Renovate\'s experts will help you find the best fix for any problem. You\'ll know exactly what will happen, how much it will cost, and how long it will take.',
-    details: 'First, we\'ll talk about what you want. Then, we\'ll show you different ideas on a computer and on paper before we start building.',
-    experience: 'This helps save time and money, cuts down on stress, and makes sure you get everything you want.',
+    description: 'Palm Renovate's experts will help you find the best solution for any problem. You'll know exactly what will happen, how much it will cost, and how long it will take.',
+    details: 'First, we'll discuss what you want. Then, we'll show you different ideas on a computer and on paper before we start building.',
+    experience: 'This helps save time and money, reduces stress, and ensures you get everything you want.',
     link: '/services/design-architectural-planning',
     image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Design-Architectural-Planning-420x315.jpg.webp',
   },
   {
     title: 'Accessory Dwelling Units',
-    description: 'Build extra living space that has just the right amount of privacy.',
-    details: 'From a bedroom and kitchenette that shares a bathroom (Junior ADU), to a separate building with everything someone needs to live comfortably.',
-    experience: 'We have designs ready for whatever you need. Some are universally accessible, some are extra strong against hurricanes, and some can give you an added income stream by renting them out. We can also combine these specialties.',
+    description: 'Create additional living space with just the right amount of privacy.',
+    details: 'From a bedroom and kitchenette that shares a bathroom (Junior ADU) to a separate building with everything needed for comfortable living.',
+    experience: 'We have designs ready for whatever you need. Some are universally accessible, some are built extra strong against hurricanes, and some can provide an additional income stream through rental. We can also combine these specialties.',
     link: '/services/accessory-dwelling-units',
     image: 'https://greenviewrenovation.com/wp-content/uploads/2024/06/Room-Addition-420x315.jpg.webp',
   },
@@ -87,7 +87,7 @@ export default function ServicesPage() {
               Transform Your Home with Our Remodeling Services
             </p>
             <p className="text-lg text-charcoal-gray leading-relaxed mt-6">
-              If you&apos;ve been searching for &quot;renovation services near me&quot;, you&apos;ve come to the right place! Palm Renovate offers remodeling services as a full-service renovation company in South Florida. With over 15 years&apos; experience in the area, we can handle any residential renovation or expansion project on time and on budget.
+              If you've been searching for "renovation services near me," you've come to the right place! Palm Renovate offers remodeling services as a full-service renovation company in South Florida. With over 15 years of experience in the area, we can handle any residential renovation or expansion project on time and on budget.
             </p>
           </div>
         </section>

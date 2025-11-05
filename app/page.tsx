@@ -33,7 +33,7 @@ export default function Home() {
 
             {/* Description */}
             <p className="text-base md:text-lg text-charcoal-gray mb-8 leading-relaxed">
-              Palm Renovate is your trusted local home remodeling company with over 15 years of experience in transforming living spaces. Our team is fully licensed, bonded and insured. We are here to build lifetime relationships with all of our clients. We don&apos;t just create promises, but we make sure we earn your trust by being reliable and delivering on our word as your local home remodeling contractors in Palm Beach & Broward County.
+              Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Our team is fully licensed, bonded, and insured. We are here to build lasting relationships with all of our clients. We do not just make promises; we earn your trust by being reliable and delivering on our word as your local home remodeling contractors in Palm Beach & Broward County.
             </p>
 
             {/* About Us Button */}

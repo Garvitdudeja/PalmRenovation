@@ -33,13 +33,13 @@ export default function AboutUs() {
                 Palm Renovate
               </h2>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
-                Palm Renovate&apos;s story began with a wish – to change the home renovation experience by putting people first. That&apos;s at the core of every project they complete, no matter how big or small it may be.
+                Palm Renovate's story began with a simple goal – to transform the home renovation experience by putting people first. This philosophy drives every project we complete, regardless of size or scope.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
-                With over 15 years of experience in the home renovation industry, we made it our mission to stand out from the competition. Our goal is to focus on creating spaces that improve each of our client&apos;s lifestyles.
+                With over 15 years of experience in the home renovation industry, we have made it our mission to stand out from the competition. Our goal is to focus on creating spaces that enhance each of our clients' lifestyles.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-8">
-                With an emphasis on exceptional service and high-quality work, Palm Renovate makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Boyton Beach, Florida, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to an entirely new construction. We&apos;re dedicated to ensuring you have the best possible experience for your next home renovation.
+                With an emphasis on exceptional service and high-quality work, Palm Renovate makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Boynton Beach, Florida, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to entirely new construction. We're dedicated to ensuring you have the best possible experience for your next home renovation.
               </p>
               <div className="text-center">
                 <Link
@@ -57,10 +57,10 @@ export default function AboutUs() {
                 Our Mission
               </h3>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-4">
-                Our clients are always our top priority. From the first consultation, we&apos;ll pay close attention to your needs without compromising on the details. We promise to keep you in the loop every step of the way. From weekly updates to constant communication through text or phone calls, we&apos;ll make sure you remain informed throughout the entire renovation process.
+                Our clients are always our top priority. From the first consultation, we pay close attention to your needs without compromising on details. We promise to keep you informed every step of the way. From weekly updates to constant communication through text or phone calls, we make sure you remain informed throughout the entire renovation process.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed">
-                Our team of experts have mastered several home renovation styles. From state-of-the-art home offices to cozy home theaters and luxurious master bathrooms, there&apos;s nothing that our team can&apos;t handle. We have a team of trusted professionals including in-house architects, engineers and designers to work on your home. Each one brings years of experience to the table, and a commitment to excellence.
+                Our team of experts has mastered numerous home renovation styles. From state-of-the-art home offices to cozy home theaters and luxurious master bathrooms, there is nothing our team cannot handle. We have a team of trusted professionals including in-house architects, engineers, and designers to work on your home. Each one brings years of experience and a commitment to excellence.
               </p>
             </div>
 
@@ -70,10 +70,10 @@ export default function AboutUs() {
                 What We Do
               </h3>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-4">
-                You can count on us to deliver quality work every time. We&apos;re much more than just a home improvement and home remodeling company. We care about our customers. We guarantee to start the job as promised and complete projects on time, without cutting corners.
+                You can count on us to deliver quality work every time. We're much more than just a home improvement and home remodeling company. We care about our customers. We guarantee to start the job as promised and complete projects on time without cutting corners.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed">
-                We meet with our clients on-site, begin the inspection process and get to know your needs and wants for this renovation. You can browse our portfolio of work while we shop together for the perfect finishes. Our in-house designer will be happy to provide custom designs and 3D rendering services for further inspiration. We care about your home as if it were our own. With our skilled team of experts on board, we guarantee the best quality for your next home renovation.
+                We meet with our clients on-site, begin the inspection process, and get to know your needs and wants for this renovation. You can browse our portfolio of work while we shop together for the perfect finishes. Our in-house designer will be happy to provide custom designs and 3D rendering services for further inspiration. We care about your home as if it were our own. With our skilled team of experts on board, we guarantee the best quality for your next home renovation.
               </p>
             </div>
 
@@ -83,10 +83,10 @@ export default function AboutUs() {
                 Our Difference
               </h3>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-4">
-                We want to create a personal experience for each of our clients. With our team&apos;s years of expertise in home renovations, we are committed to helping you create your dream home. From the initial consultation to the final walk through, we&apos;ll work with you to understand your vision, your lifestyle, and your overall budget.
+                We want to create a personal experience for each of our clients. With our team's years of expertise in home renovations, we are committed to helping you create your dream home. From the initial consultation to the final walkthrough, we will work with you to understand your vision, your lifestyle, and your overall budget.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed">
-                At Palm Renovate, our relationships are built on trust. We care about our clients, and we&apos;re dedicated to making sure that your new home works for you and your family. You can rely on us to create a space that truly feels like home.
+                At Palm Renovate, our relationships are built on trust. We care about our clients, and we're dedicated to making sure that your new home works for you and your family. You can rely on us to create a space that truly feels like home.
               </p>
             </div>
           </div>
