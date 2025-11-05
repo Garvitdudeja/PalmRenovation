@@ -1,6 +1,6 @@
-# Greenview Renovation Website
+# Palm Renovate Website
 
-A modern Next.js website for Greenview Renovation, a home remodeling and renovation contractor company serving Palm Beach & Broward County.
+A modern Next.js website for Palm Renovate, a home remodeling and renovation contractor company serving Palm Beach & Broward County.
 
 ## Features
 
@@ -45,7 +45,7 @@ npm start
 ## Project Structure
 
 ```
-greenview-renovation/
+palm-renovate/
 ├── app/
 │   ├── layout.tsx       # Root layout
 │   ├── page.tsx         # Home page
@@ -85,5 +85,5 @@ greenview-renovation/
 
 ## License
 
-© 2025 All Rights Reserved – Greenview Renovation
+© 2025 All Rights Reserved – Palm Renovate
 "# PalmRenovation" 

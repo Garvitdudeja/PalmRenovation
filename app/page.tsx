@@ -22,7 +22,7 @@ export default function Home() {
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-ocean-teal"></div>
               <h2 className="text-lg md:text-xl font-semibold text-ocean-teal">
-                Greenview Renovation
+                Palm Renovate
               </h2>
             </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
 
             {/* Description */}
             <p className="text-base md:text-lg text-charcoal-gray mb-8 leading-relaxed">
-              Greenview Renovation is your trusted local home remodeling company with over 15 years of experience in transforming living spaces. Our team is fully licensed, bonded and insured. We are here to build lifetime relationships with all of our clients. We don&apos;t just create promises, but we make sure we earn your trust by being reliable and delivering on our word as your local home remodeling contractors in Palm Beach & Broward County.
+              Palm Renovate is your trusted local home remodeling company with over 15 years of experience in transforming living spaces. Our team is fully licensed, bonded and insured. We are here to build lifetime relationships with all of our clients. We don&apos;t just create promises, but we make sure we earn your trust by being reliable and delivering on our word as your local home remodeling contractors in Palm Beach & Broward County.
             </p>
 
             {/* About Us Button */}

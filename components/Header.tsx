@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="text-2xl md:text-3xl font-bold text-ocean-teal hover:text-ocean-teal-700 transition">
-            Greenview Renovation
+            Palm Renovate
           </Link>
 
           {/* Desktop Navigation */}

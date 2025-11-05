@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>© 2025 All Rights Reserved – Greenview Renovation</p>
+          <p>© 2025 All Rights Reserved – Palm Renovate</p>
         </div>
       </div>
     </footer>

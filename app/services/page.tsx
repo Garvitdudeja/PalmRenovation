@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Our Services - Greenview Renovation',
+  title: 'Our Services - Palm Renovate',
   description: 'Transform your home with our remodeling services. Kitchen remodeling, bathroom renovation, room additions, complete home remodeling, design & architectural planning, and accessory dwelling units in South Florida.',
 };
 
@@ -45,7 +45,7 @@ const services = [
   },
   {
     title: 'Design & Architectural Planning',
-    description: 'Greenview Renovation\'s experts will help you find the best fix for any problem. You\'ll know exactly what will happen, how much it will cost, and how long it will take.',
+    description: 'Palm Renovate\'s experts will help you find the best fix for any problem. You\'ll know exactly what will happen, how much it will cost, and how long it will take.',
     details: 'First, we\'ll talk about what you want. Then, we\'ll show you different ideas on a computer and on paper before we start building.',
     experience: 'This helps save time and money, cuts down on stress, and makes sure you get everything you want.',
     link: '/services/design-architectural-planning',
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                 Our Services
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold text-charcoal-gray mb-6">
-                What We Offer At GreenView
+                What We Offer At Palm Renovate
               </h2>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function ServicesPage() {
               Transform Your Home with Our Remodeling Services
             </p>
             <p className="text-lg text-charcoal-gray leading-relaxed mt-6">
-              If you&apos;ve been searching for &quot;renovation services near me&quot;, you&apos;ve come to the right place! Greenview Renovation offers remodeling services as a full-service renovation company in South Florida. With over 15 years&apos; experience in the area, we can handle any residential renovation or expansion project on time and on budget.
+              If you&apos;ve been searching for &quot;renovation services near me&quot;, you&apos;ve come to the right place! Palm Renovate offers remodeling services as a full-service renovation company in South Florida. With over 15 years&apos; experience in the area, we can handle any residential renovation or expansion project on time and on budget.
             </p>
           </div>
         </section>

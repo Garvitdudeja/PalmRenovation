@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Greenview Renovation - Home Remodeling and Renovation Contractors",
-  description: "Greenview Renovation is your trusted local home remodeling company with over 15 years of experience in transforming living spaces. Licensed, bonded and insured contractors serving Palm Beach & Broward County.",
+  title: "Palm Renovate - Home Remodeling and Renovation Contractors",
+  description: "Palm Renovate is your trusted local home remodeling company with over 15 years of experience in transforming living spaces. Licensed, bonded and insured contractors serving Palm Beach & Broward County.",
 };
 
 export default function RootLayout({

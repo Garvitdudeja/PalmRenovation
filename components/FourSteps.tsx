@@ -22,7 +22,7 @@ const steps = [
   {
     number: '4',
     title: 'Implementation',
-    description: 'Watch your vision come to life as we expertly execute the plan. Our dedicated team ensures a smooth and efficient implementation, bringing your dream space from concept to reality with precision and care. At Greenview Renovation, your satisfaction is our ultimate goal, and we take pride in delivering results that exceed expectations.',
+    description: 'Watch your vision come to life as we expertly execute the plan. Our dedicated team ensures a smooth and efficient implementation, bringing your dream space from concept to reality with precision and care. At Palm Renovate, your satisfaction is our ultimate goal, and we take pride in delivering results that exceed expectations.',
     image: '/images/bathroom-renovation-company-680x500.jpg.webp',
   },
 ];
@@ -49,7 +49,7 @@ const FourSteps = () => {
           
           {/* Description */}
           <p className="text-lg text-charcoal-gray max-w-3xl mx-auto leading-relaxed">
-            Embark on a hassle-free journey with Greenview Renovation as we guide you through four simple steps to bring your dream space to life.
+            Embark on a hassle-free journey with Palm Renovate as we guide you through four simple steps to bring your dream space to life.
           </p>
         </div>
       </div>

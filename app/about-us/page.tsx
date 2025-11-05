@@ -5,8 +5,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us - Greenview Renovation',
-  description: 'Learn about Greenview Renovation - a full-service construction company based in Boyton Beach, Florida with over 15 years of experience in home renovation. Our mission is to put people first.',
+  title: 'About Us - Palm Renovate',
+  description: 'Learn about Palm Renovate - a full-service construction company based in Boyton Beach, Florida with over 15 years of experience in home renovation. Our mission is to put people first.',
 };
 
 export default function AboutUs() {
@@ -19,7 +19,7 @@ export default function AboutUs() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal-gray mb-4">
-                About Greenview Renovation
+                About Palm Renovate
               </h1>
             </div>
           </div>
@@ -30,16 +30,16 @@ export default function AboutUs() {
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-6">
-                Greenview Renovation
+                Palm Renovate
               </h2>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
-                Greenview Renovation&apos;s story began with a wish – to change the home renovation experience by putting people first. That&apos;s at the core of every project they complete, no matter how big or small it may be.
+                Palm Renovate&apos;s story began with a wish – to change the home renovation experience by putting people first. That&apos;s at the core of every project they complete, no matter how big or small it may be.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
                 With over 15 years of experience in the home renovation industry, we made it our mission to stand out from the competition. Our goal is to focus on creating spaces that improve each of our client&apos;s lifestyles.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-8">
-                With an emphasis on exceptional service and high-quality work, Greenview Renovation makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Boyton Beach, Florida, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to an entirely new construction. We&apos;re dedicated to ensuring you have the best possible experience for your next home renovation.
+                With an emphasis on exceptional service and high-quality work, Palm Renovate makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Boyton Beach, Florida, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to an entirely new construction. We&apos;re dedicated to ensuring you have the best possible experience for your next home renovation.
               </p>
               <div className="text-center">
                 <Link
@@ -86,7 +86,7 @@ export default function AboutUs() {
                 We want to create a personal experience for each of our clients. With our team&apos;s years of expertise in home renovations, we are committed to helping you create your dream home. From the initial consultation to the final walk through, we&apos;ll work with you to understand your vision, your lifestyle, and your overall budget.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed">
-                At Greenview Renovation, our relationships are built on trust. We care about our clients, and we&apos;re dedicated to making sure that your new home works for you and your family. You can rely on us to create a space that truly feels like home.
+                At Palm Renovate, our relationships are built on trust. We care about our clients, and we&apos;re dedicated to making sure that your new home works for you and your family. You can rely on us to create a space that truly feels like home.
               </p>
             </div>
           </div>
