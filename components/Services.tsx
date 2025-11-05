@@ -19,7 +19,7 @@ const additionalServices = [
         title: 'Room Addition',
         description: 'Need more space? Our team of remodeling contractors will help you expand your home with a bump-out, sunroom addition, garage conversion, ADU, or second-story addition.',
         link: '/services/room-addition',
-        image: '/images/room-addition-420x315.webp',
+        image: '/images/Room-Addition-420x315.webp',
     },
     {
         title: 'Complete Home Remodeling',
