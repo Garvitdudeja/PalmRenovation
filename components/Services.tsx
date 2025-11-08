@@ -63,7 +63,7 @@ const Services = () => {
                         >
                             <div className="flex flex-col md:flex-row">
                                 {/* Image on Left */}
-                                <div className="relative w-full md:w-1/2 h-64 overflow-hidden">
+                                <div className="relative w-full md:w-1/2 h-64 md:h-[300px] overflow-hidden">
                                     <Image
                                         src={service.image}
                                         alt={service.title}
@@ -73,11 +73,9 @@ const Services = () => {
                                     />
                                 </div>
                                 {/* Content on Right */}
-                                <div className="p-6 flex-1 flex flex-col justify-between">
-                                    <div>
-                                        <h3 className="text-xl font-bold text-charcoal-gray mb-4">{service.title}</h3>
-                                        <p className="text-charcoal-gray mb-4 leading-relaxed">{service.description}</p>
-                                    </div>
+                                <div className="p-6 flex-1 flex flex-col">
+                                    <h3 className="text-xl font-bold text-charcoal-gray mb-4">{service.title}</h3>
+                                    <p className="text-charcoal-gray mb-4 leading-relaxed">{service.description}</p>
                                     <Link
                                         href={service.link}
                                         className="inline-flex items-center text-ocean-teal hover:text-ocean-teal-700 transition self-start"
