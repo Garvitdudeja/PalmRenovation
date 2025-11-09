@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -67,18 +68,11 @@ export default function ServicesPage() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-ocean-teal-50 via-ocean-teal-100 to-ocean-teal-50 py-20 px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal-gray mb-4">
-                Our Services
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold text-charcoal-gray mb-6">
-                What We Offer At Palm Renovate
-              </h2>
-            </div>
-          </div>
-        </section>
+        <PageHero
+          title="Our Services"
+          backgroundImage="/images/Room-Addition.webp"
+          backgroundImageAlt="Our Services - Palm Renovate"
+        />
 
         {/* Introduction */}
         <section className="py-12 px-4 bg-white">

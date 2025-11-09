@@ -1,11 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const services = [
     'Kitchen Remodeling',
@@ -16,21 +26,23 @@ const Header = () => {
     'Impact Windows and Doors',
   ];
 
+  const shouldShowWhiteBg = isScrolled || isMenuOpen;
+  
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className={`${isScrolled ? 'sticky' : 'absolute'} top-0 left-0 right-0 z-50 transition-all duration-300 ${shouldShowWhiteBg ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="text-2xl md:text-3xl font-bold text-ocean-teal hover:text-ocean-teal-700 transition">
+          <Link href="/" className={`text-2xl md:text-3xl font-bold transition ${shouldShowWhiteBg ? 'text-ocean-teal hover:text-ocean-teal-700' : 'text-white hover:text-ocean-teal-200'}`}>
             Palm Renovate
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6">
-            <Link href="/" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+          <nav className="hidden xl:flex items-center space-x-6">
+            <Link href="/" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
               Home
             </Link>
-            <Link href="/about-us" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+            <Link href="/about-us" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
               About Us
             </Link>
             <div
@@ -38,7 +50,7 @@ const Header = () => {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <Link href="/services" className="text-charcoal-gray hover:text-ocean-teal transition flex items-center font-medium">
+              <Link href="/services" className={`transition flex items-center font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
                 Our Services
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -58,13 +70,13 @@ const Header = () => {
                 </div>
               )}
             </div>
-            <Link href="/portfolio" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+            <Link href="/portfolio" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
               Portfolio
             </Link>
-            <Link href="/blog" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+            <Link href="/blog" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
               Blog
             </Link>
-            <Link href="/contact" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+            <Link href="/contact" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
               Contact Us
             </Link>
             <a
@@ -73,17 +85,11 @@ const Header = () => {
             >
               CALL US: 561-660-0955
             </a>
-            <Link
-              href="/contact"
-              className="bg-ocean-teal text-white px-5 py-2 rounded-lg hover:bg-ocean-teal-700 transition font-semibold text-sm whitespace-nowrap"
-            >
-              Get a FREE Quote
-            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-charcoal-gray"
+            className={`xl:hidden transition ${shouldShowWhiteBg ? 'text-charcoal-gray' : 'text-white'}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -99,25 +105,25 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t">
+          <div className={`lg:hidden py-4 ${shouldShowWhiteBg ? 'border-t border-gray-200' : 'border-t border-white/20'}`}>
             <nav className="flex flex-col space-y-4">
-              <Link href="/" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+              <Link href="/" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
                 Home
               </Link>
-              <Link href="/about-us" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+              <Link href="/about-us" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
                 About Us
               </Link>
               <div>
                 <div className="flex items-center justify-between">
                   <Link 
                     href="/services"
-                    className="text-charcoal-gray hover:text-ocean-teal transition font-medium"
+                    className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}
                   >
                     Our Services
                   </Link>
                   <button
                     onClick={() => setIsServicesOpen(!isServicesOpen)}
-                    className="text-charcoal-gray hover:text-ocean-teal transition"
+                    className={`transition ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}
                     aria-label="Toggle services menu"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -131,7 +137,7 @@ const Header = () => {
                       <Link
                         key={service}
                         href={`/services/${service.toLowerCase().replace(/\s+/g, '-')}`}
-                        className="block text-charcoal-gray-300 hover:text-ocean-teal transition"
+                        className={`block transition ${shouldShowWhiteBg ? 'text-charcoal-gray-300 hover:text-ocean-teal' : 'text-white/80 hover:text-white'}`}
                       >
                         {service}
                       </Link>
@@ -139,13 +145,13 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <Link href="/portfolio" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+              <Link href="/portfolio" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
                 Portfolio
               </Link>
-              <Link href="/blog" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+              <Link href="/blog" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
                 Blog
               </Link>
-              <Link href="/contact" className="text-charcoal-gray hover:text-ocean-teal transition font-medium">
+              <Link href="/contact" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
                 Contact Us
               </Link>
               <a
@@ -154,12 +160,6 @@ const Header = () => {
               >
                 CALL US: 561-660-0955
               </a>
-              <Link
-                href="/contact"
-                className="bg-ocean-teal text-white px-6 py-3 rounded-lg hover:bg-ocean-teal-700 transition font-semibold text-center"
-              >
-                Get a FREE Quote
-              </Link>
             </nav>
           </div>
         )}

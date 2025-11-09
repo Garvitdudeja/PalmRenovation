@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -15,31 +16,27 @@ export default function AboutUs() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-ocean-teal-50 via-ocean-teal-100 to-ocean-teal-50 py-20 px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal-gray mb-4">
-                About Palm Renovate
-              </h1>
-            </div>
-          </div>
-        </section>
+        <PageHero
+          title="About Palm Renovate"
+          backgroundImage="/images/greenviewrenovation-bg.webp"
+          backgroundImageAlt="About Palm Renovate"
+        />
 
         {/* Main Content */}
-        <section className="py-20 px-4 bg-white">
+        <section className="pb-20 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-6">
                 Palm Renovate
               </h2>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
-                Palm Renovate's story began with a simple goal – to transform the home renovation experience by putting people first. This philosophy drives every project we complete, regardless of size or scope.
+                Palm Renovate&apos;s story began with a simple goal – to transform the home renovation experience by putting people first. This philosophy drives every project we complete, regardless of size or scope.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
-                With over 15 years of experience in the home renovation industry, we have made it our mission to stand out from the competition. Our goal is to focus on creating spaces that enhance each of our clients' lifestyles.
+                With over 15 years of experience in the home renovation industry, we have made it our mission to stand out from the competition. Our goal is to focus on creating spaces that enhance each of our clients&apos; lifestyles.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-8">
-                With an emphasis on exceptional service and high-quality work, Palm Renovate makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Boynton Beach, Florida, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to entirely new construction. We're dedicated to ensuring you have the best possible experience for your next home renovation.
+                With an emphasis on exceptional service and high-quality work, Palm Renovate makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Boynton Beach, Florida, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to entirely new construction. We&apos;re dedicated to ensuring you have the best possible experience for your next home renovation.
               </p>
               <div className="text-center">
                 <Link
@@ -70,7 +67,7 @@ export default function AboutUs() {
                 What We Do
               </h3>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-4">
-                You can count on us to deliver quality work every time. We're much more than just a home improvement and home remodeling company. We care about our customers. We guarantee to start the job as promised and complete projects on time without cutting corners.
+                You can count on us to deliver quality work every time. We&apos;re much more than just a home improvement and home remodeling company. We care about our customers. We guarantee to start the job as promised and complete projects on time without cutting corners.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed">
                 We meet with our clients on-site, begin the inspection process, and get to know your needs and wants for this renovation. You can browse our portfolio of work while we shop together for the perfect finishes. Our in-house designer will be happy to provide custom designs and 3D rendering services for further inspiration. We care about your home as if it were our own. With our skilled team of experts on board, we guarantee the best quality for your next home renovation.
@@ -83,10 +80,10 @@ export default function AboutUs() {
                 Our Difference
               </h3>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-4">
-                We want to create a personal experience for each of our clients. With our team's years of expertise in home renovations, we are committed to helping you create your dream home. From the initial consultation to the final walkthrough, we will work with you to understand your vision, your lifestyle, and your overall budget.
+                We want to create a personal experience for each of our clients. With our team&apos;s years of expertise in home renovations, we are committed to helping you create your dream home. From the initial consultation to the final walkthrough, we will work with you to understand your vision, your lifestyle, and your overall budget.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed">
-                At Palm Renovate, our relationships are built on trust. We care about our clients, and we're dedicated to making sure that your new home works for you and your family. You can rely on us to create a space that truly feels like home.
+                At Palm Renovate, our relationships are built on trust. We care about our clients, and we&apos;re dedicated to making sure that your new home works for you and your family. You can rely on us to create a space that truly feels like home.
               </p>
             </div>
           </div>
