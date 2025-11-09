@@ -6,7 +6,6 @@ import Testimonials from '@/components/Testimonials';
 import FourSteps from '@/components/FourSteps';
 import ServiceAreas from '@/components/ServiceAreas';
 import Footer from '@/components/Footer';
-import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
 
 export default function Home() {
@@ -50,37 +49,6 @@ export default function Home() {
         <Testimonials />
         <FourSteps />
         <ServiceAreas />
-        <section className="py-20 px-4 bg-ocean-teal">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center text-white mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Get A Free Estimate</h2>
-              <p className="text-lg mb-8">
-                Send us a message about your project, and we will make sure to get back to you!
-              </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">15</div>
-                  <div className="text-sm">Years of Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">500+</div>
-                  <div className="text-sm">Satisfied Clients</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">5.0</div>
-                  <div className="text-sm">Rating on Yelp</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">5.0</div>
-                  <div className="text-sm">Rating on Google</div>
-                </div>
-              </div>
-            </div>
-            <div className="max-w-2xl mx-auto">
-              <ContactForm variant="light" />
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

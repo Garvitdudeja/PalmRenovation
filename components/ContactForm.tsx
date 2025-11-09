@@ -139,6 +139,7 @@ export default function ContactForm({ variant = 'default' }: ContactFormProps) {
           <option value="room-addition">Room Addition</option>
           <option value="complete-home-remodeling">Complete Home Remodeling</option>
           <option value="design-architectural-planning">Design & Architectural Planning</option>
+          <option value="impact-windows-doors">Impact Windows and Doors</option>
           <option value="other">Other</option>
         </select>
       </div>
