@@ -26,6 +26,15 @@ export default function KitchenRemodelingPage() {
                 <section className="py-16 px-4 bg-white">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-8">
+                        <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/kitchen-remodeling/modern-kitchen-design-reno.webp"
+                                    alt="Professional Kitchen Remodeling"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                />
+                            </div>
                             <div>
                                 <p className="text-base text-charcoal-gray leading-relaxed mb-6">
                                     If you&apos;re dreaming of a light-filled open concept kitchen with a new island, sparkling natural or manmade stone countertops and floor, and a few extra features to suit your style, Palm Renovate has the kitchen remodeling for you. Windows, comfy seating, a place for games and homework, tell us your dream and we&apos;ll show you the plan!
@@ -39,21 +48,19 @@ export default function KitchenRemodelingPage() {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg">
-                                <Image
-                                    src="/images/kitchen-remodeling/modern-kitchen-design-reno.webp"
-                                    alt="Professional Kitchen Remodeling"
-                                    fill
-                                    className="object-cover"
-                                    sizes="(max-width: 1024px) 100vw, 50vw"
-                                />
-                            </div>
+                            
                         </div>
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-8">
                                 Professional Kitchen Remodeling
                             </h2>
                         </div>
+                        <p className="text-base text-charcoal-gray leading-relaxed mb-6">
+                        Older kitchens in Palm Beach and Broward County were designed on the ‘kitchen triangle’ model of efficiency. An excellent idea when it originated in the 1940s, it anticipated neither the number of appliances nor the number of cooks that would arrive in the next 8 decades.
+                        </p>
+                        <p className="text-base text-charcoal-gray leading-relaxed mb-6">
+                            With our kitchen remodeling, our licensed team has over 15 years of experience at bringing in optimum style and function, opening and brightening kitchens to create spaces where the whole crowd loves to gather.
+                        </p>
                         <ul className="space-y-4 text-base text-charcoal-gray">
                             <li className="flex items-start">
                                 <span className="text-ocean-teal mr-3 font-bold">•</span>
