@@ -105,7 +105,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className={`lg:hidden py-4 ${shouldShowWhiteBg ? 'border-t border-gray-200' : 'border-t border-white/20'}`}>
+          <div className={`xl:hidden py-4 ${shouldShowWhiteBg ? 'border-t border-gray-200' : 'border-t border-white/20'}`}>
             <nav className="flex flex-col space-y-4">
               <Link href="/" className={`transition font-medium ${shouldShowWhiteBg ? 'text-charcoal-gray hover:text-ocean-teal' : 'text-white hover:text-ocean-teal-200'}`}>
                 Home

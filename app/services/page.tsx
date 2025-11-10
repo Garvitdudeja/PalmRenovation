@@ -80,53 +80,65 @@ export default function ServicesPage() {
               Transform Your Home with Our Remodeling Services
             </p>
             <p className="text-lg text-charcoal-gray leading-relaxed mt-6">
-              If you've been searching for "renovation services near me," you've come to the right place! Palm Renovate offers remodeling services as a full-service renovation company in South Florida. With over 15 years of experience in the area, we can handle any residential renovation or expansion project on time and on budget.
+              If you&apos;ve been searching for &quot;renovation services near me,&quot; you&apos;ve come to the right place! Palm Renovate offers remodeling services as a full-service renovation company in South Florida. With over 15 years of experience in the area, we can handle any residential renovation or expansion project on time and on budget.
             </p>
           </div>
         </section>
 
         {/* Services Sections */}
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-20 bg-white">
           <div className="max-w-7xl mx-auto">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <div
                 key={service.title}
-                className={`mb-16 ${index !== services.length - 1 ? 'border-b border-gray-200 pb-16' : ''}`}
+                className="mb-16 border-2 border-ocean-teal-700 overflow-hidden"
               >
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                  {/* Image */}
-                  <div className={`order-1 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                    <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                  {/* Image - Left Column */}
+                  <div className="relative w-full h-80 lg:h-auto">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  </div>
+
+                  {/* Content - Right Column with Light Green Background and Diagonal Pattern */}
+                  <div 
+                    className="relative p-8 lg:p-12 bg-ocean-teal-50"
+                  >
+                    {/* Background Image for text side only */}
+                    <div className="absolute inset-0 opacity-10 -z-0">
                       <Image
-                        src={service.image}
-                        alt={service.title}
+                        src="/images/decor-bg_4-sm.webp"
+                        alt=""
                         fill
                         className="object-cover"
                         sizes="(max-width: 1024px) 100vw, 50vw"
                       />
                     </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className={`order-2 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <h3 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4">
-                      {service.title}
-                    </h3>
-                    <p className="text-lg text-charcoal-gray leading-relaxed mb-4">
-                      {service.description}
-                    </p>
-                    <p className="text-lg text-charcoal-gray leading-relaxed mb-4">
-                      {service.details}
-                    </p>
-                    <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
-                      {service.experience}
-                    </p>
-                    <Link
-                      href={service.link}
-                      className="inline-block bg-ocean-teal text-white px-6 py-3 rounded-lg hover:bg-ocean-teal-700 transition font-semibold"
-                    >
-                      Learn More
-                    </Link>
+                    <div className="relative z-10">
+                      <h3 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4">
+                        {service.title}
+                      </h3>
+                      <p className="text-base text-charcoal-gray leading-relaxed mb-4">
+                        {service.description}
+                      </p>
+                      <p className="text-base text-charcoal-gray leading-relaxed mb-4">
+                        {service.details}
+                      </p>
+                      <p className="text-base text-charcoal-gray leading-relaxed mb-6">
+                        {service.experience}
+                      </p>
+                      <Link
+                        href={service.link}
+                        className="inline-block bg-ocean-teal text-white px-6 py-3 rounded-lg hover:bg-ocean-teal-700 transition font-semibold"
+                      >
+                        Learn More
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
