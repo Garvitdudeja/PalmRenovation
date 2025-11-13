@@ -5,9 +5,46 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
+
 export const metadata: Metadata = {
-  title: 'Our Services - Palm Renovate',
-  description: 'Transform your home with our remodeling services. Kitchen remodeling, bathroom renovation, room additions, complete home remodeling, design & architectural planning, and accessory dwelling units in South Florida.',
+  title: 'Our Services',
+  description: 'Transform your home with our remodeling services. Kitchen remodeling, bathroom renovation, room additions, complete home remodeling, design & architectural planning, and accessory dwelling units in South Florida. Serving Palm Beach & Broward County.',
+  keywords: [
+    'kitchen remodeling services',
+    'bathroom renovation services',
+    'room addition contractors',
+    'complete home remodeling',
+    'design and architectural planning',
+    'accessory dwelling units',
+    'home renovation services Palm Beach',
+    'Broward County remodeling',
+  ],
+  openGraph: {
+    title: 'Our Services - Palm Renovate',
+    description: 'Transform your home with our remodeling services. Kitchen remodeling, bathroom renovation, room additions, complete home remodeling, design & architectural planning, and accessory dwelling units in South Florida.',
+    url: `${siteUrl}/services`,
+    siteName: 'Palm Renovate',
+    images: [
+      {
+        url: `${siteUrl}/images/Room-Addition.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Palm Renovate Services',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Services - Palm Renovate',
+    description: 'Transform your home with our remodeling services. Kitchen remodeling, bathroom renovation, room additions, and more.',
+    images: [`${siteUrl}/images/Room-Addition.webp`],
+  },
+  alternates: {
+    canonical: `${siteUrl}/services`,
+  },
 };
 
 const services = [

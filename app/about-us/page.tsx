@@ -4,9 +4,44 @@ import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
+
 export const metadata: Metadata = {
-  title: 'About Us - Palm Renovate',
-  description: 'Learn about Palm Renovate - a full-service construction company based in Boyton Beach, Florida with over 15 years of experience in home renovation. Our mission is to put people first.',
+  title: 'About Us',
+  description: 'Learn about Palm Renovate - a full-service construction company based in Boynton Beach, Florida with over 15 years of experience in home renovation. Our mission is to put people first. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.',
+  keywords: [
+    'about Palm Renovate',
+    'home renovation company Florida',
+    'construction company Boynton Beach',
+    'licensed contractors Palm Beach',
+    'home remodeling contractors',
+    'experienced renovation team',
+  ],
+  openGraph: {
+    title: 'About Us - Palm Renovate',
+    description: 'Learn about Palm Renovate - a full-service construction company with over 15 years of experience in home renovation. Our mission is to put people first.',
+    url: `${siteUrl}/about-us`,
+    siteName: 'Palm Renovate',
+    images: [
+      {
+        url: `${siteUrl}/images/greenviewrenovation-bg.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'About Palm Renovate',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us - Palm Renovate',
+    description: 'Learn about Palm Renovate - a full-service construction company with over 15 years of experience in home renovation.',
+    images: [`${siteUrl}/images/greenviewrenovation-bg.webp`],
+  },
+  alternates: {
+    canonical: `${siteUrl}/about-us`,
+  },
 };
 
 export default function AboutUs() {

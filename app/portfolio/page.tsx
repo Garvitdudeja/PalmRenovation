@@ -7,9 +7,44 @@ import Image from 'next/image';
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
+
 export const metadata: Metadata = {
-  title: 'Portfolio - Palm Renovate',
-  description: 'View our portfolio of completed home renovation projects including kitchen remodeling, bathroom renovations, and complete home remodels in South Florida.',
+  title: 'Portfolio',
+  description: 'View our portfolio of completed home renovation projects including kitchen remodeling, bathroom renovations, and complete home remodels in South Florida. See examples of our quality work in Palm Beach and Broward County.',
+  keywords: [
+    'Palm Renovate portfolio',
+    'home renovation projects',
+    'kitchen remodeling examples',
+    'bathroom renovation gallery',
+    'home remodeling before and after',
+    'South Florida renovation projects',
+  ],
+  openGraph: {
+    title: 'Portfolio - Palm Renovate',
+    description: 'View our portfolio of completed home renovation projects including kitchen remodeling, bathroom renovations, and complete home remodels in South Florida.',
+    url: `${siteUrl}/portfolio`,
+    siteName: 'Palm Renovate',
+    images: [
+      {
+        url: `${siteUrl}/images/Room-Addition.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Palm Renovate Portfolio',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Portfolio - Palm Renovate',
+    description: 'View our portfolio of completed home renovation projects including kitchen remodeling, bathroom renovations, and complete home remodels.',
+    images: [`${siteUrl}/images/Room-Addition.webp`],
+  },
+  alternates: {
+    canonical: `${siteUrl}/portfolio`,
+  },
 };
 
 const ITEMS_PER_PAGE = 12;

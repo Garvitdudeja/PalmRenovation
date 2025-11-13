@@ -4,9 +4,44 @@ import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 import type { Metadata } from 'next';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
+
 export const metadata: Metadata = {
-  title: 'Contact Us - Palm Renovate',
-  description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone, email, or fill out our contact form. Located in Boynton Beach, Florida.',
+  title: 'Contact Us',
+  description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone at 561-660-0955, email, or fill out our contact form. Located in Boynton Beach, Florida. Serving Palm Beach & Broward County.',
+  keywords: [
+    'contact Palm Renovate',
+    'home remodeling quote',
+    'free estimate',
+    'Boynton Beach contractors',
+    'Palm Beach renovation contact',
+    'home improvement consultation',
+  ],
+  openGraph: {
+    title: 'Contact Us - Palm Renovate',
+    description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone, email, or fill out our contact form. Located in Boynton Beach, Florida.',
+    url: `${siteUrl}/contact`,
+    siteName: 'Palm Renovate',
+    images: [
+      {
+        url: `${siteUrl}/images/Room-Addition.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Contact Palm Renovate',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us - Palm Renovate',
+    description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone, email, or fill out our contact form.',
+    images: [`${siteUrl}/images/Room-Addition.webp`],
+  },
+  alternates: {
+    canonical: `${siteUrl}/contact`,
+  },
 };
 
 export default function ContactPage() {
