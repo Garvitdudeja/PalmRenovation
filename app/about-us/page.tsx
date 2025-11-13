@@ -8,7 +8,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Palm Renovate - a full-service construction company based in Boynton Beach, Florida with over 15 years of experience in home renovation. Our mission is to put people first. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.',
+  description: 'Learn about Palm Renovate - a full-service construction company based in Palm Beach, Florida, United States with over 15 years of experience in home renovation. Our mission is to put people first. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.',
   keywords: [
     'about Palm Renovate',
     'home renovation company Florida',
@@ -70,7 +70,7 @@ export default function AboutUs() {
                 With over 15 years of experience in the home renovation industry, we have made it our mission to stand out from the competition. Our goal is to focus on creating spaces that enhance each of our clients&apos; lifestyles.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-8">
-                With an emphasis on exceptional service and high-quality work, Palm Renovate makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Boynton Beach, Florida, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to entirely new construction. We&apos;re dedicated to ensuring you have the best possible experience for your next home renovation.
+                With an emphasis on exceptional service and high-quality work, Palm Renovate makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Palm Beach, Florida, United States, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to entirely new construction. We&apos;re dedicated to ensuring you have the best possible experience for your next home renovation.
               </p>
               <div className="text-center">
                 <Link

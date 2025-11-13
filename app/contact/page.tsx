@@ -8,7 +8,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone at 813-838-2193, email, or fill out our contact form. Located in Boynton Beach, Florida. Serving Palm Beach & Broward County.',
+  description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone at 813-838-2193, email, or fill out our contact form. Located in Palm Beach, Florida, United States. Serving Palm Beach & Broward County.',
   keywords: [
     'contact Palm Renovate',
     'home remodeling quote',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Contact Us - Palm Renovate',
-    description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone, email, or fill out our contact form. Located in Boynton Beach, Florida.',
+    description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone, email, or fill out our contact form. Located in Palm Beach, Florida, United States.',
     url: `${siteUrl}/contact`,
     siteName: 'Palm Renovate',
     images: [
@@ -146,8 +146,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-bold text-charcoal-gray mb-2">Where We Are</h3>
                 <p className="text-charcoal-gray">
-                  2500 Quantom Lakes Dr, Suite 203<br />
-                  Boynton Beach, FL 33426
+                  Palm Beach, Florida, United States
                 </p>
               </div>
             </div>
