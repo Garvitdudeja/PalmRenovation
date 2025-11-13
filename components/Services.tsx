@@ -65,7 +65,7 @@ const Services = () => {
                 </div>
 
                 {/* Two Additional Cards Side by Side */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-12">
                     {additionalServices.map((service) => (
                         <div
                             key={service.title}
@@ -73,7 +73,7 @@ const Services = () => {
                         >
                             {/* Tilted Border Divider */}
                             <div 
-                                className="border-divider absolute left-1/2 top-1/2 w-8 group-hover:w-[2px] bg-ocean-teal z-10" 
+                                className="border-divider absolute left-1/2 top-1/2 w-8 group-hover:w-[2px] bg-ocean-teal z-10 hidden md:block" 
                                 style={{ 
                                     height: 'calc(100% / 0.966)', 
                                     transformOrigin: 'center center'

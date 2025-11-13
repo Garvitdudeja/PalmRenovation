@@ -89,7 +89,7 @@ const Testimonials = () => {
               Discover Why Our Customers Love Us
             </h2>
             <p className="text-lg text-charcoal-gray mb-6 leading-relaxed">
-              Read what our satisfied customers have to say about their experience with Palm Renovate. We take pride in our work and consistently strive to provide high-quality services that exceed our customers' expectations. Contact us today to learn more about our services and how we can help transform your home!
+              Read what our satisfied customers have to say about their experience with Palm Renovate. We take pride in our work and consistently strive to provide high-quality services that exceed our customers&apos; expectations. Contact us today to learn more about our services and how we can help transform your home!
             </p>
             <div className="flex items-center gap-3 mb-6">
               <span className="text-4xl font-bold text-charcoal-gray">5.0</span>
@@ -102,12 +102,12 @@ const Testimonials = () => {
           </div>
 
           {/* Right Section - Review Slider */}
-          <div>
+          <div className="mx-8">
             <h3 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-8 uppercase">Reviews</h3>
             
             <div className="relative">
               {/* Review Card */}
-              <div className="bg-white rounded-lg p-8 shadow-lg relative overflow-hidden h-[450px]">
+              <div className="bg-white rounded-lg p-8 shadow-lg relative overflow-hidden h-[550px] md:h-[400px]">
                 {/* Content Container with Slide Animation */}
                 <div 
                   key={currentIndex}
