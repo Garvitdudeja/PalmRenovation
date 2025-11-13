@@ -36,7 +36,7 @@ const CompanyInfo = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className='static lg:absolute lg:right-20 xl:right-0 lg:top-[-100px]'>
+          <div className='static lg:absolute lg:right-20 lg:top-[-100px]'>
             <ContactForm variant="light" />
           </div>
         </div>

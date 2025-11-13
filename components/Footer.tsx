@@ -54,13 +54,13 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:info@GreenviewRenovation.com" className="hover:text-ocean-teal-300 transition">
-                  info@GreenviewRenovation.com
+                <a href="mailto:swolkov@palmdevgroup.com" className="hover:text-ocean-teal-300 transition">
+                  swolkov@palmdevgroup.com
                 </a>
               </li>
               <li>
-                <a href="tel:561-660-0955" className="hover:text-ocean-teal-300 transition">
-                  561-660-0955
+                <a href="tel:813-838-2193" className="hover:text-ocean-teal-300 transition">
+                  813-838-2193
                 </a>
               </li>
               <li className="text-sm text-gray-400 mt-4">

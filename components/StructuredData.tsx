@@ -24,8 +24,8 @@ export default function StructuredData() {
       latitude: "26.5284",
       longitude: "-80.0906",
     },
-    telephone: "+1-561-660-0955",
-    email: "info@GreenviewRenovation.com",
+    telephone: "+1-813-838-2193",
+    email: "swolkov@palmdevgroup.com",
     priceRange: "$$",
     areaServed: [
       {

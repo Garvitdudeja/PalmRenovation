@@ -8,7 +8,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone at 561-660-0955, email, or fill out our contact form. Located in Boynton Beach, Florida. Serving Palm Beach & Broward County.',
+  description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone at 813-838-2193, email, or fill out our contact form. Located in Boynton Beach, Florida. Serving Palm Beach & Broward County.',
   keywords: [
     'contact Palm Renovate',
     'home remodeling quote',
@@ -88,10 +88,10 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-bold text-charcoal-gray mb-2">Phone Number</h3>
                 <a
-                  href="tel:561-660-0955"
+                  href="tel:813-838-2193"
                   className="text-ocean-teal hover:text-ocean-teal-700 transition font-semibold text-lg"
                 >
-                  561-660-0955
+                  813-838-2193
                 </a>
               </div>
 
@@ -114,10 +114,10 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-bold text-charcoal-gray mb-2">Email</h3>
                 <a
-                  href="mailto:info@GreenviewRenovation.com"
+                  href="mailto:swolkov@palmdevgroup.com"
                   className="text-ocean-teal hover:text-ocean-teal-700 transition font-semibold text-lg break-all"
                 >
-                  Info@greenviewRenovation.com
+                  swolkov@palmdevgroup.com
                 </a>
               </div>
 
