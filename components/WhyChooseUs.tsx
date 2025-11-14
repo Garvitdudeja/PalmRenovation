@@ -10,7 +10,7 @@ const features = [
   },
   {
     title: 'Licensed, Insured & Bonded',
-    description: 'Palm Renovate holds full licensing and comprehensive insurance coverage for residential remodeling projects. Rest assured that your home improvement project is protected and professionally managed.',
+    description: 'Palm Development & Renovation Group holds full licensing and comprehensive insurance coverage for residential remodeling projects. Rest assured that your home improvement project is protected and professionally managed.',
     icon: (
       <svg className="w-12 h-12 text-ocean-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -38,7 +38,7 @@ const features = [
   },
   {
     title: 'Premium Materials',
-    description: 'Palm Renovate sources only premium-grade materials to guarantee a refined and long-lasting finish. You can trust that we never compromise on material quality.',
+    description: 'Palm Development & Renovation Group sources only premium-grade materials to guarantee a refined and long-lasting finish. You can trust that we never compromise on material quality.',
     icon: (
       <svg className="w-12 h-12 text-ocean-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -62,10 +62,10 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4">
-            Why Choose Palm Renovate
+            Why Choose Palm Development & Renovation Group
           </h2>
           <p className="text-lg text-charcoal-gray max-w-3xl mx-auto leading-relaxed">
-            At Palm Renovate, we listen carefully, understand your needs, and deliver results that reflect your vision while meeting our high standards of quality. We never compromise on quality and strive to establish ourselves as the premier renovation company in Palm Beach & Broward County and the surrounding areas. Excellence is guaranteed with Palm Renovate.
+            At Palm Development & Renovation Group, we listen carefully, understand your needs, and deliver results that reflect your vision while meeting our high standards of quality. We never compromise on quality and strive to establish ourselves as the premier renovation company in Palm Beach & Broward County and the surrounding areas. Excellence is guaranteed with Palm Development & Renovation Group.
           </p>
         </div>
 

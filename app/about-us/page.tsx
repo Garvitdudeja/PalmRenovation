@@ -8,9 +8,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Palm Renovate - a full-service construction company based in Palm Beach, Florida, United States with over 15 years of experience in home renovation. Our mission is to put people first. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.',
+  description: 'Learn about Palm Development & Renovation Group - a full-service construction company based in Palm Beach, Florida, United States with over 15 years of experience in home renovation. Our mission is to put people first. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.',
   keywords: [
-    'about Palm Renovate',
+    'about Palm Development & Renovation Group',
     'home renovation company Florida',
     'construction company Boynton Beach',
     'licensed contractors Palm Beach',
@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     'experienced renovation team',
   ],
   openGraph: {
-    title: 'About Us - Palm Renovate',
-    description: 'Learn about Palm Renovate - a full-service construction company with over 15 years of experience in home renovation. Our mission is to put people first.',
+    title: 'About Us - Palm Development & Renovation Group',
+    description: 'Learn about Palm Development & Renovation Group - a full-service construction company with over 15 years of experience in home renovation. Our mission is to put people first.',
     url: `${siteUrl}/about-us`,
-    siteName: 'Palm Renovate',
+    siteName: 'Palm Development & Renovation Group',
     images: [
       {
         url: `${siteUrl}/images/palmdevgroup_bg.webp`,
         width: 1200,
         height: 630,
-        alt: 'About Palm Renovate',
+        alt: 'About Palm Development & Renovation Group',
       },
     ],
     locale: 'en_US',
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Us - Palm Renovate',
-    description: 'Learn about Palm Renovate - a full-service construction company with over 15 years of experience in home renovation.',
+    title: 'About Us - Palm Development & Renovation Group',
+    description: 'Learn about Palm Development & Renovation Group - a full-service construction company with over 15 years of experience in home renovation.',
     images: [`${siteUrl}/images/palmdevgroup_bg.webp`],
   },
   alternates: {
@@ -51,9 +51,9 @@ export default function AboutUs() {
       <main>
         {/* Hero Section */}
         <PageHero
-          title="About Palm Renovate"
+          title="About Palm Development & Renovation Group"
           backgroundImage="/images/palmdevgroup_bg.webp"
-          backgroundImageAlt="About Palm Renovate"
+          backgroundImageAlt="About Palm Development & Renovation Group"
         />
 
         {/* Main Content */}
@@ -61,16 +61,16 @@ export default function AboutUs() {
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-6">
-                Palm Renovate
+                Palm Development & Renovation Group
               </h2>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
-                Palm Renovate&apos;s story began with a simple goal – to transform the home renovation experience by putting people first. This philosophy drives every project we complete, regardless of size or scope.
+                Palm Development & Renovation Group&apos;s story began with a simple goal – to transform the home renovation experience by putting people first. This philosophy drives every project we complete, regardless of size or scope.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-6">
                 With over 15 years of experience in the home renovation industry, we have made it our mission to stand out from the competition. Our goal is to focus on creating spaces that enhance each of our clients&apos; lifestyles.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed mb-8">
-                With an emphasis on exceptional service and high-quality work, Palm Renovate makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Palm Beach, Florida, United States, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to entirely new construction. We&apos;re dedicated to ensuring you have the best possible experience for your next home renovation.
+                With an emphasis on exceptional service and high-quality work, Palm Development & Renovation Group makes the renovation experience enjoyable for all homeowners. As a full-service construction company based in Palm Beach, Florida, United States, our team can handle any renovation or expansion project. This includes everything from bathroom renovations to entirely new construction. We&apos;re dedicated to ensuring you have the best possible experience for your next home renovation.
               </p>
               <div className="text-center">
                 <Link
@@ -117,7 +117,7 @@ export default function AboutUs() {
                 We want to create a personal experience for each of our clients. With our team&apos;s years of expertise in home renovations, we are committed to helping you create your dream home. From the initial consultation to the final walkthrough, we will work with you to understand your vision, your lifestyle, and your overall budget.
               </p>
               <p className="text-lg text-charcoal-gray leading-relaxed">
-                At Palm Renovate, our relationships are built on trust. We care about our clients, and we&apos;re dedicated to making sure that your new home works for you and your family. You can rely on us to create a space that truly feels like home.
+                At Palm Development & Renovation Group, our relationships are built on trust. We care about our clients, and we&apos;re dedicated to making sure that your new home works for you and your family. You can rely on us to create a space that truly feels like home.
               </p>
             </div>
           </div>

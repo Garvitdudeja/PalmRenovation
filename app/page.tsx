@@ -13,7 +13,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Licensed, bonded, and insured contractors serving Palm Beach & Broward County. Specializing in kitchen remodeling, bathroom renovation, room additions, and complete home remodeling.',
+  description: 'Palm Development & Renovation Group is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Licensed, bonded, and insured contractors serving Palm Beach & Broward County. Specializing in kitchen remodeling, bathroom renovation, room additions, and complete home remodeling.',
   keywords: [
     'home remodeling Palm Beach',
     'home renovation Broward County',
@@ -24,16 +24,16 @@ export const metadata: Metadata = {
     'residential remodeling Florida',
   ],
   openGraph: {
-    title: 'Palm Renovate - Home Remodeling and Renovation Contractors',
-    description: 'Transform your home with Palm Renovate. Over 15 years of experience in kitchen remodeling, bathroom renovation, room additions, and complete home remodeling in Palm Beach & Broward County.',
+    title: 'Palm Development & Renovation Group - Home Remodeling and Renovation Contractors',
+    description: 'Transform your home with Palm Development & Renovation Group. Over 15 years of experience in kitchen remodeling, bathroom renovation, room additions, and complete home remodeling in Palm Beach & Broward County.',
     url: siteUrl,
-    siteName: 'Palm Renovate',
+    siteName: 'Palm Development & Renovation Group',
     images: [
       {
         url: `${siteUrl}/images/palmdevgroup_bg.webp`,
         width: 1200,
         height: 630,
-        alt: 'Palm Renovate - Home Remodeling Services',
+        alt: 'Palm Development & Renovation Group - Home Remodeling Services',
       },
     ],
     locale: 'en_US',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Palm Renovate - Home Remodeling and Renovation Contractors',
-    description: 'Transform your home with Palm Renovate. Over 15 years of experience in home remodeling services.',
+    title: 'Palm Development & Renovation Group - Home Remodeling and Renovation Contractors',
+    description: 'Transform your home with Palm Development & Renovation Group. Over 15 years of experience in home remodeling services.',
     images: [`${siteUrl}/images/palmdevgroup_bg.webp`],
   },
   alternates: {

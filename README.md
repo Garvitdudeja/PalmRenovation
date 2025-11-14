@@ -1,6 +1,6 @@
-# Palm Renovate Website
+# Palm Development & Renovation Group Website
 
-A modern Next.js website for Palm Renovate, a home remodeling and renovation contractor company serving Palm Beach & Broward County.
+A modern Next.js website for Palm Development & Renovation Group, a home remodeling and renovation contractor company serving Palm Beach & Broward County.
 
 ## Features
 
@@ -85,5 +85,5 @@ palm-renovate/
 
 ## License
 
-© 2025 All Rights Reserved – Palm Renovate
+© 2025 All Rights Reserved – Palm Development & Renovation Group
 "# PalmRenovation" 

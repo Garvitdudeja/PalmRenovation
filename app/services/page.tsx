@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     'Broward County remodeling',
   ],
   openGraph: {
-    title: 'Our Services - Palm Renovate',
+    title: 'Our Services - Palm Development & Renovation Group',
     description: 'Transform your home with our remodeling services. Kitchen remodeling, bathroom renovation, room additions, complete home remodeling, design & architectural planning, and accessory dwelling units in South Florida.',
     url: `${siteUrl}/services`,
-    siteName: 'Palm Renovate',
+    siteName: 'Palm Development & Renovation Group',
     images: [
       {
         url: `${siteUrl}/images/Room-Addition.webp`,
         width: 1200,
         height: 630,
-        alt: 'Palm Renovate Services',
+        alt: 'Palm Development & Renovation Group Services',
       },
     ],
     locale: 'en_US',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Our Services - Palm Renovate',
+    title: 'Our Services - Palm Development & Renovation Group',
     description: 'Transform your home with our remodeling services. Kitchen remodeling, bathroom renovation, room additions, and more.',
     images: [`${siteUrl}/images/Room-Addition.webp`],
   },
@@ -82,7 +82,7 @@ const services = [
   },
   {
     title: 'Design & Architectural Planning',
-    description: 'Palm Renovate\'s experts will help you find the best solution for any problem. You will know exactly what will happen, how much it will cost, and how long it will take.',
+    description: 'Palm Development & Renovation Group\'s experts will help you find the best solution for any problem. You will know exactly what will happen, how much it will cost, and how long it will take.',
     details: 'First, we will discuss what you want. Then, we will show you different ideas on a computer and on paper before we start building.',
     experience: 'This helps save time and money, reduces stress, and ensures you get everything you want.',
     link: '/services/design-architectural-planning',
@@ -107,7 +107,7 @@ export default function ServicesPage() {
         <PageHero
           title="Our Services"
           backgroundImage="/images/Room-Addition.webp"
-          backgroundImageAlt="Our Services - Palm Renovate"
+          backgroundImageAlt="Our Services - Palm Development & Renovation Group"
         />
 
         {/* Introduction */}
@@ -117,7 +117,7 @@ export default function ServicesPage() {
               Transform Your Home with Our Remodeling Services
             </p>
             <p className="text-lg text-charcoal-gray leading-relaxed mt-6">
-              If you&apos;ve been searching for &quot;renovation services near me,&quot; you&apos;ve come to the right place! Palm Renovate offers remodeling services as a full-service renovation company in South Florida. With over 15 years of experience in the area, we can handle any residential renovation or expansion project on time and on budget.
+              If you&apos;ve been searching for &quot;renovation services near me,&quot; you&apos;ve come to the right place! Palm Development & Renovation Group offers remodeling services as a full-service renovation company in South Florida. With over 15 years of experience in the area, we can handle any residential renovation or expansion project on time and on budget.
             </p>
           </div>
         </section>

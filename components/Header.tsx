@@ -33,8 +33,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className={`text-2xl md:text-3xl font-bold transition ${shouldShowWhiteBg ? 'text-ocean-teal hover:text-ocean-teal-700' : 'text-white hover:text-ocean-teal-200'}`}>
-            Palm Renovate
+          <Link href="/" className={`text-2xl md:text-[1.34rem] font-bold transition ${shouldShowWhiteBg ? 'text-ocean-teal hover:text-ocean-teal-700' : 'text-white hover:text-ocean-teal-200'}`}>
+            Palm Development & Renovation Group
           </Link>
 
           {/* Desktop Navigation */}

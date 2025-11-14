@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'View our portfolio of completed home renovation projects including kitchen remodeling, bathroom renovations, and complete home remodels in South Florida. See examples of our quality work in Palm Beach and Broward County.',
   keywords: [
-    'Palm Renovate portfolio',
+    'Palm Development & Renovation Group portfolio',
     'home renovation projects',
     'kitchen remodeling examples',
     'bathroom renovation gallery',
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     'South Florida renovation projects',
   ],
   openGraph: {
-    title: 'Portfolio - Palm Renovate',
+    title: 'Portfolio - Palm Development & Renovation Group',
     description: 'View our portfolio of completed home renovation projects including kitchen remodeling, bathroom renovations, and complete home remodels in South Florida.',
     url: `${siteUrl}/portfolio`,
-    siteName: 'Palm Renovate',
+    siteName: 'Palm Development & Renovation Group',
     images: [
       {
         url: `${siteUrl}/images/Room-Addition.webp`,
         width: 1200,
         height: 630,
-        alt: 'Palm Renovate Portfolio',
+        alt: 'Palm Development & Renovation Group Portfolio',
       },
     ],
     locale: 'en_US',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Portfolio - Palm Renovate',
+    title: 'Portfolio - Palm Development & Renovation Group',
     description: 'View our portfolio of completed home renovation projects including kitchen remodeling, bathroom renovations, and complete home remodels.',
     images: [`${siteUrl}/images/Room-Addition.webp`],
   },
@@ -177,14 +177,14 @@ export default async function PortfolioPage({ searchParams }: PortfolioPageProps
         <PageHero
           title="Our Portfolio"
           backgroundImage="/images/Room-Addition.webp"
-          backgroundImageAlt="Our Portfolio - Palm Renovate"
+          backgroundImageAlt="Our Portfolio - Palm Development & Renovation Group"
         />
 
         {/* Portfolio Intro */}
         <section className="py-12 px-4 bg-white">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-charcoal-gray mb-4">
-              Check Out The Palm Renovate Difference
+              Check Out The Palm Development & Renovation Group Difference
             </h2>
             <p className="text-lg md:text-xl text-charcoal-gray">
               Transform Your Home with Our Renovation Services

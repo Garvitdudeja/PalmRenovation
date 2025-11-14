@@ -30,13 +30,13 @@ const additionalServices = [
     },
     {
         title: 'Design & Architectural Planning',
-        description: "As a residential remodeling company, Palm Renovate delivers exceptional design and architectural services with precision, creativity, and execution that makes all the difference.",
+        description: "As a residential remodeling company, Palm Development & Renovation Group delivers exceptional design and architectural services with precision, creativity, and execution that makes all the difference.",
         link: '/services/design-architectural-planning',
         image: '/images/Design-Architectural-Planning-420x315.jpg.webp',
     },
     {
         title: 'All Our Services',
-        description: "Palm Renovate offers a comprehensive selection of remodeling and renovation services throughout Palm Beach & Broward County.",
+        description: "Palm Development & Renovation Group offers a comprehensive selection of remodeling and renovation services throughout Palm Beach & Broward County.",
         link: '/services',
         image: '/images/Kitchen-Remodeling-420x315.jpg.webp',
     },
@@ -60,7 +60,7 @@ const Services = () => {
                         Our Services
                     </h2>
                     <h3 className="text-xl md:text-2xl text-charcoal-gray font-semibold mb-8">
-                        What We Offer At Palm Renovate
+                        What We Offer At Palm Development & Renovation Group
                     </h3>
                 </div>
 

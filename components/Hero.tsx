@@ -25,7 +25,7 @@ const Hero = () => {
           muted
           playsInline
           className="w-full h-full object-cover"
-          aria-label="Home renovation and remodeling video showcasing Palm Renovate's work"
+          aria-label="Home renovation and remodeling video showcasing Palm Development & Renovation Group's work"
         >
           <source src="/images/slide-1-720.mp4" type="video/mp4" />
         </video>

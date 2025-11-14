@@ -8,9 +8,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone at 813-838-2193, email, or fill out our contact form. Located in Palm Beach, Florida, United States. Serving Palm Beach & Broward County.',
+  description: 'Get in touch with Palm Development & Renovation Group for your home remodeling needs. Contact us by phone at 813-838-2193, email, or fill out our contact form. Located in Palm Beach, Florida, United States. Serving Palm Beach & Broward County.',
   keywords: [
-    'contact Palm Renovate',
+    'contact Palm Development & Renovation Group',
     'home remodeling quote',
     'free estimate',
     'Boynton Beach contractors',
@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     'home improvement consultation',
   ],
   openGraph: {
-    title: 'Contact Us - Palm Renovate',
-    description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone, email, or fill out our contact form. Located in Palm Beach, Florida, United States.',
+    title: 'Contact Us - Palm Development & Renovation Group',
+    description: 'Get in touch with Palm Development & Renovation Group for your home remodeling needs. Contact us by phone, email, or fill out our contact form. Located in Palm Beach, Florida, United States.',
     url: `${siteUrl}/contact`,
-    siteName: 'Palm Renovate',
+    siteName: 'Palm Development & Renovation Group',
     images: [
       {
         url: `${siteUrl}/images/Room-Addition.webp`,
         width: 1200,
         height: 630,
-        alt: 'Contact Palm Renovate',
+        alt: 'Contact Palm Development & Renovation Group',
       },
     ],
     locale: 'en_US',
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Us - Palm Renovate',
-    description: 'Get in touch with Palm Renovate for your home remodeling needs. Contact us by phone, email, or fill out our contact form.',
+    title: 'Contact Us - Palm Development & Renovation Group',
+    description: 'Get in touch with Palm Development & Renovation Group for your home remodeling needs. Contact us by phone, email, or fill out our contact form.',
     images: [`${siteUrl}/images/Room-Addition.webp`],
   },
   alternates: {
@@ -53,7 +53,7 @@ export default function ContactPage() {
         <PageHero
           title="Contact Us"
           backgroundImage="/images/Room-Addition.webp"
-          backgroundImageAlt="Contact Us - Palm Renovate"
+          backgroundImageAlt="Contact Us - Palm Development & Renovation Group"
         />
 
         {/* Ready To Start Section */}
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 Ready To Start Your Project?
               </h2>
               <p className="text-lg md:text-xl text-charcoal-gray">
-                Palm Renovate is here to help every step of the way!
+                Palm Development & Renovation Group is here to help every step of the way!
               </p>
             </div>
 

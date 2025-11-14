@@ -13,10 +13,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://palmrenovate.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Palm Renovate - Home Remodeling and Renovation Contractors",
-    template: "%s | Palm Renovate"
+    default: "Palm Development & Renovation Group - Home Remodeling and Renovation Contractors",
+    template: "%s | Palm Development & Renovation Group"
   },
-  description: "Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.",
+  description: "Palm Development & Renovation Group is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.",
   keywords: [
     "home remodeling",
     "home renovation",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     "accessory dwelling units",
     "ADU construction"
   ],
-  authors: [{ name: "Palm Renovate" }],
-  creator: "Palm Renovate",
-  publisher: "Palm Renovate",
+  authors: [{ name: "Palm Development & Renovation Group" }],
+  creator: "Palm Development & Renovation Group",
+  publisher: "Palm Development & Renovation Group",
   formatDetection: {
     email: false,
     address: false,
@@ -47,22 +47,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "Palm Renovate",
-    title: "Palm Renovate - Home Remodeling and Renovation Contractors",
-    description: "Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.",
+    siteName: "Palm Development & Renovation Group",
+    title: "Palm Development & Renovation Group - Home Remodeling and Renovation Contractors",
+    description: "Palm Development & Renovation Group is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.",
     images: [
       {
         url: `${siteUrl}/images/palmdevgroup_bg.webp`,
         width: 1200,
         height: 630,
-        alt: "Palm Renovate - Home Remodeling Services",
+        alt: "Palm Development & Renovation Group - Home Remodeling Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Palm Renovate - Home Remodeling and Renovation Contractors",
-    description: "Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces.",
+    title: "Palm Development & Renovation Group - Home Remodeling and Renovation Contractors",
+    description: "Palm Development & Renovation Group is your trusted local home remodeling company with over 15 years of experience transforming living spaces.",
     images: [`${siteUrl}/images/palmdevgroup_bg.webp`],
   },
   robots: {

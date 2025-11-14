@@ -21,16 +21,16 @@ export const metadata: Metadata = {
         'professional kitchen installation',
     ],
     openGraph: {
-        title: 'Kitchen Remodeling - Palm Renovate',
+        title: 'Kitchen Remodeling - Palm Development & Renovation Group',
         description: 'Transform your kitchen with our professional kitchen remodeling services in Palm Beach and Broward County. Custom designs, quality materials, and expert installation.',
         url: `${siteUrl}/services/kitchen-remodeling`,
-        siteName: 'Palm Renovate',
+        siteName: 'Palm Development & Renovation Group',
         images: [
             {
                 url: `${siteUrl}/images/kitchen-remodeling/herobanner.webp`,
                 width: 1200,
                 height: 630,
-                alt: 'Kitchen Remodeling Services - Palm Renovate',
+                alt: 'Kitchen Remodeling Services - Palm Development & Renovation Group',
             },
         ],
         locale: 'en_US',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Kitchen Remodeling - Palm Renovate',
+        title: 'Kitchen Remodeling - Palm Development & Renovation Group',
         description: 'Transform your kitchen with our professional kitchen remodeling services. Custom designs, quality materials, and expert installation.',
         images: [`${siteUrl}/images/kitchen-remodeling/herobanner.webp`],
     },
@@ -56,7 +56,7 @@ export default function KitchenRemodelingPage() {
                 <PageHero
                     title="Kitchen Remodeling"
                     backgroundImage="/images/kitchen-remodeling/herobanner.webp"
-                    backgroundImageAlt="Kitchen Remodeling - Palm Renovate"
+                    backgroundImageAlt="Kitchen Remodeling - Palm Development & Renovation Group"
                 />
 
                 {/* Professional Kitchen Remodeling Section */}
@@ -74,7 +74,7 @@ export default function KitchenRemodelingPage() {
                             </div>
                             <div>
                                 <p className="text-base text-charcoal-gray leading-relaxed mb-6">
-                                    If you&apos;re dreaming of a light-filled open concept kitchen with a new island, sparkling natural or manmade stone countertops and floor, and a few extra features to suit your style, Palm Renovate has the kitchen remodeling for you. Windows, comfy seating, a place for games and homework, tell us your dream and we&apos;ll show you the plan!
+                                    If you&apos;re dreaming of a light-filled open concept kitchen with a new island, sparkling natural or manmade stone countertops and floor, and a few extra features to suit your style, Palm Development & Renovation Group has the kitchen remodeling for you. Windows, comfy seating, a place for games and homework, tell us your dream and we&apos;ll show you the plan!
                                 </p>
                                 <div className="mt-6">
                                     <Link
@@ -140,7 +140,7 @@ export default function KitchenRemodelingPage() {
                             How Can We Transform Your Kitchen?
                         </h2>
                         <p className="text-base text-charcoal-gray leading-relaxed mb-6">
-                            Palm Renovate offers kitchens remodeling services and can handle everything from complete teardowns/rebuilds to smaller updates. Some of the most popular kitchen remodeling projects we handle include:
+                            Palm Development & Renovation Group offers kitchens remodeling services and can handle everything from complete teardowns/rebuilds to smaller updates. Some of the most popular kitchen remodeling projects we handle include:
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-lg">
@@ -201,7 +201,7 @@ export default function KitchenRemodelingPage() {
                             Trusted Kitchen Remodeling Professionals in Palm Beach
                         </h2>
                         <p className="text-base text-charcoal-gray leading-relaxed mb-8">
-                            A long-term relationship is worth far more to us than any individual project. That&apos;s why we ask questions about your kitchen remodeling, show alternatives to you, and keep you apprised every step of the way. It&apos;s your kitchen, and you should see your fingerprints everywhere before you touch a single thing! Of course, for the biggest of remodeling jobs, you&apos;ll want to select the best kitchen remodeling company in Palm Beach and Broward County. Here&apos;s what you get with Palm Renovate:
+                            A long-term relationship is worth far more to us than any individual project. That&apos;s why we ask questions about your kitchen remodeling, show alternatives to you, and keep you apprised every step of the way. It&apos;s your kitchen, and you should see your fingerprints everywhere before you touch a single thing! Of course, for the biggest of remodeling jobs, you&apos;ll want to select the best kitchen remodeling company in Palm Beach and Broward County. Here&apos;s what you get with Palm Development & Renovation Group:
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -289,7 +289,7 @@ export default function KitchenRemodelingPage() {
                 <section className="py-16 px-4 bg-white">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4">
-                            Build Your Dream Kitchen with Palm Renovate
+                            Build Your Dream Kitchen with Palm Development & Renovation Group
                         </h2>
                         <p className="text-base text-charcoal-gray leading-relaxed mb-6">
                             Planning this largest of home renovations is a big job, so let us take care of everything in your kitchen remodeling for you. No nasty surprises, no sweat. Contact us today!
@@ -324,15 +324,15 @@ export default function KitchenRemodelingPage() {
                         <div className="space-y-6">
                             <div>
                                 <h3 className="text-xl font-bold text-charcoal-gray mb-3">
-                                    What services does Palm Renovate offer?
+                                    What services does Palm Development & Renovation Group offer?
                                 </h3>
                                 <p className="text-base text-charcoal-gray leading-relaxed">
-                                    Palm Renovate specializes in a wide range of home renovation and construction services to meet all your needs. Our offerings include kitchen remodeling, bathroom remodeling, new construction projects, flooring solutions, and comprehensive design services. Whether you&apos;re looking to update a single room or undertake a full-scale renovation, our team has the expertise and experience to bring your vision to life.
+                                    Palm Development & Renovation Group specializes in a wide range of home renovation and construction services to meet all your needs. Our offerings include kitchen remodeling, bathroom remodeling, new construction projects, flooring solutions, and comprehensive design services. Whether you&apos;re looking to update a single room or undertake a full-scale renovation, our team has the expertise and experience to bring your vision to life.
                                 </p>
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold text-charcoal-gray mb-3">
-                                    How does the project process work with Palm Renovate?
+                                    How does the project process work with Palm Development & Renovation Group?
                                 </h3>
                                 <p className="text-base text-charcoal-gray leading-relaxed">
                                     Initial consultation, then detailed quote and agreement, and then the design team starts working to help visualize the change, etc. This is aside from projects that require architectural planning, for which we will start with plans and then move on to a contract for construction and design.
@@ -340,7 +340,7 @@ export default function KitchenRemodelingPage() {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold text-charcoal-gray mb-3">
-                                    How long does a typical renovation project take with Palm Renovate?
+                                    How long does a typical renovation project take with Palm Development & Renovation Group?
                                 </h3>
                                 <p className="text-base text-charcoal-gray leading-relaxed">
                                     The timeline for a renovation project can vary widely depending on the scope and complexity of the work. A simple bathroom or kitchen remodel may take several weeks, while larger projects like new constructions or extensive renovations could take several months. During the initial consultation, we&apos;ll provide a more accurate timeline based on your specific project requirements. Our goal is always to complete your project efficiently without compromising on quality.
@@ -348,7 +348,7 @@ export default function KitchenRemodelingPage() {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold text-charcoal-gray mb-3">
-                                    Does Palm Renovate offer any warranties or guarantees on their work?
+                                    Does Palm Development & Renovation Group offer any warranties or guarantees on their work?
                                 </h3>
                                 <p className="text-base text-charcoal-gray leading-relaxed">
                                     Yes, we stand behind the quality of our work with a comprehensive warranty covering labor and materials. The specific terms of the warranty depend on the project and will be clearly outlined in your contract. We believe in the importance of peace of mind for our clients and are committed to ensuring your complete satisfaction with the finished project. For any concerns or issues that arise post-completion, we&apos;re here to provide prompt and effective solutions.
@@ -365,15 +365,15 @@ export default function KitchenRemodelingPage() {
                                 "mainEntity": [
                                     {
                                         "@type": "Question",
-                                        "name": "What services does Palm Renovate offer?",
+                                        "name": "What services does Palm Development & Renovation Group offer?",
                                         "acceptedAnswer": {
                                             "@type": "Answer",
-                                            "text": "Palm Renovate specializes in a wide range of home renovation and construction services to meet all your needs. Our offerings include kitchen remodeling, bathroom remodeling, new construction projects, flooring solutions, and comprehensive design services. Whether you're looking to update a single room or undertake a full-scale renovation, our team has the expertise and experience to bring your vision to life."
+                                            "text": "Palm Development & Renovation Group specializes in a wide range of home renovation and construction services to meet all your needs. Our offerings include kitchen remodeling, bathroom remodeling, new construction projects, flooring solutions, and comprehensive design services. Whether you're looking to update a single room or undertake a full-scale renovation, our team has the expertise and experience to bring your vision to life."
                                         }
                                     },
                                     {
                                         "@type": "Question",
-                                        "name": "How does the project process work with Palm Renovate?",
+                                        "name": "How does the project process work with Palm Development & Renovation Group?",
                                         "acceptedAnswer": {
                                             "@type": "Answer",
                                             "text": "Initial consultation, then detailed quote and agreement, and then the design team starts working to help visualize the change, etc. This is aside from projects that require architectural planning, for which we will start with plans and then move on to a contract for construction and design."
@@ -381,7 +381,7 @@ export default function KitchenRemodelingPage() {
                                     },
                                     {
                                         "@type": "Question",
-                                        "name": "How long does a typical renovation project take with Palm Renovate?",
+                                        "name": "How long does a typical renovation project take with Palm Development & Renovation Group?",
                                         "acceptedAnswer": {
                                             "@type": "Answer",
                                             "text": "The timeline for a renovation project can vary widely depending on the scope and complexity of the work. A simple bathroom or kitchen remodel may take several weeks, while larger projects like new constructions or extensive renovations could take several months. During the initial consultation, we'll provide a more accurate timeline based on your specific project requirements. Our goal is always to complete your project efficiently without compromising on quality."
@@ -389,7 +389,7 @@ export default function KitchenRemodelingPage() {
                                     },
                                     {
                                         "@type": "Question",
-                                        "name": "Does Palm Renovate offer any warranties or guarantees on their work?",
+                                        "name": "Does Palm Development & Renovation Group offer any warranties or guarantees on their work?",
                                         "acceptedAnswer": {
                                             "@type": "Answer",
                                             "text": "Yes, we stand behind the quality of our work with a comprehensive warranty covering labor and materials. The specific terms of the warranty depend on the project and will be clearly outlined in your contract. We believe in the importance of peace of mind for our clients and are committed to ensuring your complete satisfaction with the finished project. For any concerns or issues that arise post-completion, we're here to provide prompt and effective solutions."

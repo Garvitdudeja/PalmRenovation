@@ -12,7 +12,7 @@ const CompanyInfo = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-ocean-teal"></div>
               <h2 className="text-lg md:text-xl font-semibold text-ocean-teal">
-                Palm Renovate
+                Palm Development & Renovation Group
               </h2>
             </div>
 
@@ -23,7 +23,7 @@ const CompanyInfo = () => {
 
             {/* Description */}
             <p className="text-base md:text-lg text-charcoal-gray mb-8 leading-relaxed">
-              Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Our team is fully licensed, bonded, and insured. We are here to build lasting relationships with all of our clients. We do not just make promises; we earn your trust by being reliable and delivering on our word as your local home remodeling contractors in Palm Beach & Broward County.
+              Palm Development & Renovation Group is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Our team is fully licensed, bonded, and insured. We are here to build lasting relationships with all of our clients. We do not just make promises; we earn your trust by being reliable and delivering on our word as your local home remodeling contractors in Palm Beach & Broward County.
             </p>
 
             {/* About Us Button */}
