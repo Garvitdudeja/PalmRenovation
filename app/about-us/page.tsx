@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Palm Renovate',
     images: [
       {
-        url: `${siteUrl}/images/greenviewrenovation-bg.webp`,
+        url: `${siteUrl}/images/palmdevgroup_bg.webp`,
         width: 1200,
         height: 630,
         alt: 'About Palm Renovate',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Us - Palm Renovate',
     description: 'Learn about Palm Renovate - a full-service construction company with over 15 years of experience in home renovation.',
-    images: [`${siteUrl}/images/greenviewrenovation-bg.webp`],
+    images: [`${siteUrl}/images/palmdevgroup_bg.webp`],
   },
   alternates: {
     canonical: `${siteUrl}/about-us`,
@@ -52,7 +52,7 @@ export default function AboutUs() {
         {/* Hero Section */}
         <PageHero
           title="About Palm Renovate"
-          backgroundImage="/images/greenviewrenovation-bg.webp"
+          backgroundImage="/images/palmdevgroup_bg.webp"
           backgroundImageAlt="About Palm Renovate"
         />
 

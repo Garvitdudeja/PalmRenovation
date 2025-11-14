@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description: "Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.",
     images: [
       {
-        url: `${siteUrl}/images/greenviewrenovation-bg.webp`,
+        url: `${siteUrl}/images/palmdevgroup_bg.webp`,
         width: 1200,
         height: 630,
         alt: "Palm Renovate - Home Remodeling Services",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Palm Renovate - Home Remodeling and Renovation Contractors",
     description: "Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces.",
-    images: [`${siteUrl}/images/greenviewrenovation-bg.webp`],
+    images: [`${siteUrl}/images/palmdevgroup_bg.webp`],
   },
   robots: {
     index: true,

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'Palm Renovate',
     images: [
       {
-        url: `${siteUrl}/images/greenviewrenovation-bg.webp`,
+        url: `${siteUrl}/images/palmdevgroup_bg.webp`,
         width: 1200,
         height: 630,
         alt: 'Palm Renovate - Home Remodeling Services',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Palm Renovate - Home Remodeling and Renovation Contractors',
     description: 'Transform your home with Palm Renovate. Over 15 years of experience in home remodeling services.',
-    images: [`${siteUrl}/images/greenviewrenovation-bg.webp`],
+    images: [`${siteUrl}/images/palmdevgroup_bg.webp`],
   },
   alternates: {
     canonical: siteUrl,

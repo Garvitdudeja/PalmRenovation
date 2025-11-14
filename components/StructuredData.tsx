@@ -8,8 +8,8 @@ export default function StructuredData() {
     name: "Palm Renovate",
     alternateName: "Palm Renovate",
     url: siteUrl,
-    logo: `${siteUrl}/images/greenviewrenovation-bg.webp`,
-    image: `${siteUrl}/images/greenviewrenovation-bg.webp`,
+    logo: `${siteUrl}/images/palmdevgroup_bg.webp`,
+    image: `${siteUrl}/images/palmdevgroup_bg.webp`,
     description: "Palm Renovate is your trusted local home remodeling company with over 15 years of experience transforming living spaces. Licensed, bonded, and insured contractors serving Palm Beach & Broward County.",
     address: {
       "@type": "PostalAddress",
