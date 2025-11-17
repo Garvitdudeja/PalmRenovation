@@ -57,16 +57,18 @@ const Header = () => {
                 </svg>
               </Link>
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-xl rounded-lg py-2 border border-gray-100">
-                  {services.map((service) => (
-                    <Link
-                      key={service}
-                      href={`/services/${service.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="block px-4 py-3 text-charcoal-gray hover:bg-ocean-teal-50 hover:text-ocean-teal transition"
-                    >
-                      {service}
-                    </Link>
-                  ))}
+                <div className="absolute top-full left-0 pt-2 w-64">
+                  <div className="bg-white shadow-xl rounded-lg py-2 border border-gray-100">
+                    {services.map((service) => (
+                      <Link
+                        key={service}
+                        href={`/services/${service.toLowerCase().replace(/\s+/g, '-')}`}
+                        className="block px-4 py-3 text-charcoal-gray hover:bg-ocean-teal-50 hover:text-ocean-teal transition"
+                      >
+                        {service}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
