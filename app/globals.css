@@ -6,17 +6,17 @@
 }
 
 @theme {
-  --color-ocean-teal-50: #E6F5F4;
-  --color-ocean-teal-100: #CCEBE9;
-  --color-ocean-teal-200: #99D7D3;
-  --color-ocean-teal-300: #66C3BD;
-  --color-ocean-teal-400: #33AFA7;
-  --color-ocean-teal-500: #007D79;
-  --color-ocean-teal-600: #00645F;
-  --color-ocean-teal-700: #004B45;
-  --color-ocean-teal-800: #00322C;
-  --color-ocean-teal-900: #001912;
-  --color-ocean-teal: #007D79;
+  --color-ocean-teal-50: #F1FAEE;
+  --color-ocean-teal-100: #D8F3DC;
+  --color-ocean-teal-200: #B7E4C7;
+  --color-ocean-teal-300: #95D5B2;
+  --color-ocean-teal-400: #74C69D;
+  --color-ocean-teal-500: #52B788;
+  --color-ocean-teal-600: #40916C;
+  --color-ocean-teal-700: #2D6A4F;
+  --color-ocean-teal-800: #1B4332;
+  --color-ocean-teal-900: #081C15;
+  --color-ocean-teal: #52B788;
   
   --color-charcoal-gray-50: #E6E6E6;
   --color-charcoal-gray-100: #CCCCCC;
