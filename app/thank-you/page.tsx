@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ThankYouPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen pb-20">
             <PageHero
                 title="Thank You"
                 backgroundImage="/images/kitchen-remodeling/herobanner.webp"
