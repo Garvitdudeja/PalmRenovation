@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
     title: 'Thank You - Palm Development & Renovation Group',
@@ -13,31 +14,13 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
     return (
         <main className="min-h-screen">
-                <section className="py-20 px-4 bg-white">
+            <PageHero
+                title="Thank You"
+                backgroundImage="/images/kitchen-remodeling/herobanner.webp"
+                backgroundImageAlt="Thank you for contacting Palm Development & Renovation Group. We will get back to you soon."
+            />
+                <section className=" px-4 bg-white">
                     <div className="max-w-3xl mx-auto text-center">
-                        {/* Success Icon */}
-                        <div className="mb-8">
-                            <div className="w-24 h-24 bg-ocean-teal rounded-full flex items-center justify-center mx-auto">
-                                <svg
-                                    className="w-12 h-12 text-white"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M5 13l4 4L19 7"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-
-                        {/* Thank You Message */}
-                        <h1 className="text-4xl md:text-5xl font-bold text-charcoal-gray mb-6">
-                            Thank You!
-                        </h1>
                         <p className="text-xl text-charcoal-gray mb-4">
                             Your message has been submitted successfully.
                         </p>
