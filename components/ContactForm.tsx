@@ -1,12 +1,14 @@
 'use client';
 
 import { useState, useId } from 'react';
+import { useRouter } from 'next/navigation';
 
 interface ContactFormProps {
   variant?: 'default' | 'light';
 }
 
 export default function ContactForm({ variant = 'default' }: ContactFormProps) {
+  const router = useRouter();
   // Generate unique ID prefix to avoid conflicts when multiple forms are on the same page
   const uniqueId = useId();
   const formId = `contact-form-${variant}-${uniqueId}`;
@@ -52,21 +54,8 @@ export default function ContactForm({ variant = 'default' }: ContactFormProps) {
       const data = await response.json();
 
       if (response.ok) {
-        setSubmitStatus({
-          type: 'success',
-          message: 'Thank you! Your message has been submitted successfully.',
-        });
-        // Reset form
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          address: '',
-          postalCode: '',
-          service: '',
-          message: '',
-        });
+        // Redirect to thank you page
+        router.push('/thank-you');
       } else {
         setSubmitStatus({
           type: 'error',

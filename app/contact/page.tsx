@@ -1,6 +1,4 @@
-import Header from '@/components/Header';
 import ContactForm from '@/components/ContactForm';
-import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 import type { Metadata } from 'next';
 
@@ -46,9 +44,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
+    <main>
         {/* Hero Section */}
         <PageHero
           title="Contact Us"
@@ -157,9 +153,7 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </main>
   );
 }
 

@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -100,9 +98,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
+    <main>
         {/* Hero Section */}
         <PageHero
           title="Our Services"
@@ -182,9 +178,7 @@ export default function ServicesPage() {
             ))}
           </div>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </main>
   );
 }
 

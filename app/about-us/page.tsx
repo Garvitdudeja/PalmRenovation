@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -46,9 +44,7 @@ export const metadata: Metadata = {
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
+    <main>
         {/* Hero Section */}
         <PageHero
           title="About Palm Development & Renovation Group"
@@ -122,9 +118,7 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </main>
   );
 }
 

@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 import PortfolioPagination from '@/components/PortfolioPagination';
 import PortfolioScrollHandler from '@/components/PortfolioScrollHandler';
@@ -167,8 +165,7 @@ export default async function PortfolioPage({ searchParams }: PortfolioPageProps
   const portfolioItems = allPortfolioItems.slice(startIndex, endIndex);
   const totalPages = Math.ceil(allPortfolioItems.length / ITEMS_PER_PAGE);
   return (
-    <div className="min-h-screen">
-      <Header />
+    <>
       <Suspense fallback={null}>
         <PortfolioScrollHandler />
       </Suspense>
@@ -233,8 +230,7 @@ export default async function PortfolioPage({ searchParams }: PortfolioPageProps
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
+    </>
   );
 }
 

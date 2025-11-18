@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 import type { Metadata } from 'next';
 import FAQAccordion from './FAQAccordion';
@@ -54,9 +52,7 @@ export const metadata: Metadata = {
 
 export default function KitchenRemodelingPage() {
     return (
-        <div className="min-h-screen">
-            <Header />
-            <main>
+        <main>
                 {/* Hero Section */}
                 <PageHero
                     title="Kitchen Remodeling"
@@ -127,9 +123,7 @@ export default function KitchenRemodelingPage() {
                         })
                     }}
                 />
-            </main>
-            <Footer />
-        </div>
+        </main>
     );
 }
 
