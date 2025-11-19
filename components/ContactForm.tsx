@@ -78,7 +78,7 @@ export default function ContactForm({ variant = 'default' }: ContactFormProps) {
 
   return (
     <form onSubmit={handleSubmit} className={`${bgClass} ${textClass} p-8 rounded-lg shadow-lg`}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 py-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div>
           <label htmlFor={`${formId}-firstName`} className="block text-charcoal-gray font-semibold mb-2">
             First Name <span className="text-red-500">*</span>
