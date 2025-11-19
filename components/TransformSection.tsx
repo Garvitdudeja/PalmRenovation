@@ -1,21 +1,19 @@
 import Image from 'next/image';
 
-export default function TransformKitchenSection() {
-    const projects = [
-        {
-            title: 'New cabinets',
-            description: 'If your cabinets are showing their age, it\'s time to replace them with beautiful, functional new cabinets.',
-        },
-        {
-            title: 'Open concept & Islands',
-            description: 'A new kitchen island can add beauty, functionality, and definition to your kitchen space.',
-        },
-        {
-            title: 'Custom countertops',
-            description: 'From natural stone like quartzite and marble to Porcelain slabs and everything in between, we design and install custom countertops that fit your lifestyle and budget.',
-        },
-    ];
+interface Project {
+    title: string;
+    description: string;
+}
 
+interface TransformSectionProps {
+    title: string;
+    paragraph: string;
+    projects: Project[];
+    imageSrc: string;
+    imageAlt: string;
+}
+
+export default function TransformSection({ title, paragraph, projects, imageSrc, imageAlt }: TransformSectionProps) {
     return (
         <section className="py-16 px-4 bg-white">
             <div className="max-w-[80%] mx-auto">
@@ -23,10 +21,10 @@ export default function TransformKitchenSection() {
                     {/* Left Side - Text Content */}
                     <div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal-gray mb-6">
-                            How Can We Transform Your Kitchen?
+                            {title}
                         </h2>
                         <p className="text-base text-charcoal-gray leading-relaxed mb-6">
-                            <span className="underline">Palm Development & Renovation Group</span> offers kitchen remodeling services and can handle everything from complete teardowns/rebuilds to smaller updates. Some of the most popular <span className="underline">kitchen remodeling projects</span> we handle include:
+                            {paragraph}
                         </p>
                         <ul className="space-y-6 text-base text-charcoal-gray">
                             {projects.map((project, index) => (
@@ -41,11 +39,11 @@ export default function TransformKitchenSection() {
                             ))}
                         </ul>
                     </div>
-                    {/* Right Side - Large Kitchen Image */}
+                    {/* Right Side - Large Image */}
                     <div className="relative w-full h-[600px] lg:h-[700px] rounded-lg overflow-hidden shadow-xl">
                         <Image
-                            src="/images/kitchen-remodeling/modern-kitchen-design-reno.webp"
-                            alt="Modern kitchen with white cabinets, light wood accents, and dining area"
+                            src={imageSrc}
+                            alt={imageAlt}
                             fill
                             className="object-cover"
                             sizes="(max-width: 1024px) 100vw, 50vw"

@@ -36,7 +36,10 @@ export const metadata: Metadata = {
     "custom home renovation",
     "design and architectural planning",
     "accessory dwelling units",
-    "ADU construction"
+    "ADU construction",
+    "PalmDevGroup",
+    "palmdevgroup",
+    "Palm Development & Renovation Group"
   ],
   authors: [{ name: "Palm Development & Renovation Group" }],
   creator: "Palm Development & Renovation Group",

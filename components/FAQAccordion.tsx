@@ -3,26 +3,17 @@
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
-const faqs = [
-    {
-        question: 'What services does Palm Development & Renovation Group offer?',
-        answer: 'Palm Development & Renovation Group specializes in a wide range of home renovation and construction services to meet all your needs. Our offerings include kitchen remodeling, bathroom remodeling, new construction projects, flooring solutions, and comprehensive design services. Whether you\'re looking to update a single room or undertake a full-scale renovation, our team has the expertise and experience to bring your vision to life.',
-    },
-    {
-        question: 'How does the project process work with Palm Development & Renovation Group?',
-        answer: 'Initial consultation, then detailed quote and agreement, and then the design team starts working to help visualize the change, etc. This is aside from projects that require architectural planning, for which we will start with plans and then move on to a contract for construction and design.',
-    },
-    {
-        question: 'How long does a typical renovation project take with Palm Development & Renovation Group?',
-        answer: 'The timeline for a renovation project can vary widely depending on the scope and complexity of the work. A simple bathroom or kitchen remodel may take several weeks, while larger projects like new constructions or extensive renovations could take several months. During the initial consultation, we\'ll provide a more accurate timeline based on your specific project requirements. Our goal is always to complete your project efficiently without compromising on quality.',
-    },
-    {
-        question: 'Does Palm Development & Renovation Group offer any warranties or guarantees on their work?',
-        answer: 'Yes, we stand behind the quality of our work with a comprehensive warranty covering labor and materials. The specific terms of the warranty depend on the project and will be clearly outlined in your contract. We believe in the importance of peace of mind for our clients and are committed to ensuring your complete satisfaction with the finished project. For any concerns or issues that arise post-completion, we\'re here to provide prompt and effective solutions.',
-    },
-];
+interface FAQ {
+    question: string;
+    answer: string;
+}
 
-function FAQItem({ faq, isOpen, onToggle }: { faq: { question: string; answer: string }; isOpen: boolean; onToggle: () => void }) {
+interface FAQAccordionProps {
+    faqs: FAQ[];
+    backgroundImage?: string;
+}
+
+function FAQItem({ faq, isOpen, onToggle }: { faq: FAQ; isOpen: boolean; onToggle: () => void }) {
     const contentRef = useRef<HTMLDivElement>(null);
     const innerRef = useRef<HTMLDivElement>(null);
     const [maxHeight, setMaxHeight] = useState<number>(0);
@@ -92,7 +83,7 @@ function FAQItem({ faq, isOpen, onToggle }: { faq: { question: string; answer: s
     );
 }
 
-export default function FAQAccordion() {
+export default function FAQAccordion({ faqs, backgroundImage = '/images/kitchen-remodeling/faqbg.png' }: FAQAccordionProps) {
     const [openIndex, setOpenIndex] = useState(0); // First question is open by default
 
     const toggleFAQ = (index: number) => {
@@ -104,7 +95,7 @@ export default function FAQAccordion() {
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full">
                 <Image
-                    src="/images/kitchen-remodeling/faqbg.png"
+                    src={backgroundImage}
                     alt=""
                     fill
                     className="object-cover"

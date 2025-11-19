@@ -6,7 +6,7 @@ export default function StructuredData() {
     "@type": "LocalBusiness",
     "@id": `${siteUrl}#organization`,
     name: "Palm Development & Renovation Group",
-    alternateName: "Palm Development & Renovation Group",
+    alternateName: ["PalmDevGroup", "Palm Development & Renovation Group", "Palm Renovate"],
     url: siteUrl,
     logo: `${siteUrl}/images/palmdevgroup_bg.webp`,
     image: `${siteUrl}/images/palmdevgroup_bg.webp`,
