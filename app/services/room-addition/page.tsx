@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         siteName: 'Palm Renovate',
         images: [
             {
-                url: `${siteUrl}/images/room-addition/herobanner.webp`,
+                url: `${siteUrl}/images/Room Addition/hero.webp`,
                 width: 1200,
                 height: 630,
                 alt: 'Room Addition Services - Palm Renovate',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Room Addition - Palm Renovate',
         description: 'Expand your living space with professional room addition services. Custom designs, increased property value, and expert construction.',
-        images: [`${siteUrl}/images/room-addition/herobanner.webp`],
+        images: [`${siteUrl}/images/Room Addition/hero.webp`],
     },
     alternates: {
         canonical: `${siteUrl}/services/room-addition`,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 export default function RoomAdditionPage() {
     // Intro Section Data
     const introSectionData = {
-        imageSrc: '/images/room-addition/room-addition-intro.webp',
+        imageSrc: '/images/Room Addition/intro.webp',
         imageAlt: 'Beautiful room addition with modern design',
         text: 'Moving to a more suitable home is, let\'s face it, a LOT. A lot of looking, a lot of settling, a lot of packing, and moving, and waiting for your previous home to sell, not to mention a lot of payments for years to come. Instead, a room addition from Palm Development & Renovation Group can turn the place where your memories live into the place that suits your household\'s current needs to a T.',
         linkHref: '/services',
@@ -109,6 +109,8 @@ export default function RoomAdditionPage() {
     const trustedContractorsSectionData = {
         title: 'Trusted Contractors for Room Additions',
         paragraph: 'We believe in building lasting relationships with all our clients, so we want every step of the process to be comfortable, just like your new addition. To that end, you can expect the following deliverables:',
+        imageSrc: '/images/Room Addition/trusted.webp',
+        imageAlt: 'Trusted room addition contractors',
         features: [
             {
                 icon: (
@@ -196,7 +198,7 @@ export default function RoomAdditionPage() {
             {/* Hero Section */}
             <PageHero
                 title="Room Addition"
-                backgroundImage="/images/room-addition/herobanner.webp"
+                backgroundImage="/images/Room Addition/hero.webp"
                 backgroundImageAlt="Room Addition - Palm Renovate"
             />
 

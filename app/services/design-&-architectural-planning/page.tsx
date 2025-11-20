@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         siteName: 'Palm Renovate',
         images: [
             {
-                url: `${siteUrl}/images/design-architectural-planning/herobanner.webp`,
+                url: `${siteUrl}/images/Design and Architechture/hero.webp`,
                 width: 1200,
                 height: 630,
                 alt: 'Design & Architectural Planning Services - Palm Renovate',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Design & Architectural Planning - Palm Renovate',
         description: 'Professional architectural planning and design services. Complete design-build solutions for home additions, remodels, and ADUs.',
-        images: [`${siteUrl}/images/design-architectural-planning/herobanner.webp`],
+        images: [`${siteUrl}/images/Design and Architechture/hero.webp`],
     },
     alternates: {
         canonical: `${siteUrl}/services/design-architectural-planning`,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 export default function DesignArchitecturalPlanningPage() {
     // Intro Section Data
     const introSectionData = {
-        imageSrc: '/images/design-architectural-planning/design-planning-intro.webp',
+        imageSrc: '/images/Design and Architechture/intro.webp',
         imageAlt: 'Architectural design and planning process',
         text: 'Whether you\'re expecting a younger or older addition to your family, feeling cramped, or craving more connection to nature, more storage space, more family togetherness, or more alone time, you want this endeavor to be worth the time and money you will put into it. Why consider architectural planning or design-build with Palm Development & Renovation Group for your home addition or home remodeling? Let\'s envision the process together to see.',
         linkHref: '/services',
@@ -100,6 +100,16 @@ export default function DesignArchitecturalPlanningPage() {
     const trustedDesignBuildData = {
         title: 'Trusted Design Build Contractor',
         paragraph: 'We\'re not after projects. We\'re after long-term relationships. Here\'s what sets us apart:',
+        imageSrc: '/images/Design and Architechture/TrustedProfeesional.webp',
+        imageAlt: 'Trusted design build contractor',
+        bulletPoints: [
+            'We\'re not after projects. We\'re after long-term relationships.',
+            'We\'re your single point of contact from concept to occupancy and beyond.',
+            'We\'re licensed (Florida Department of Business and Professional Regulation [DBPR] License number CRC1334770), insured, and certified.',
+            'We\'re deeply experienced with a range of project types.',
+            'We\'re committed to listening to you, understanding and putting your needs first.',
+            'All of our projects are fully warranted for 2 years from completion.',
+        ],
         features: [
             {
                 icon: (
@@ -186,7 +196,7 @@ export default function DesignArchitecturalPlanningPage() {
             {/* Hero Section */}
             <PageHero
                 title="Design & Architectural Planning"
-                backgroundImage="/images/design-architectural-planning/herobanner.webp"
+                backgroundImage="/images/Design and Architechture/hero.webp"
                 backgroundImageAlt="Design & Architectural Planning - Palm Renovate"
             />
 

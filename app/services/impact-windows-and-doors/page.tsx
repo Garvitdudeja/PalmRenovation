@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         siteName: 'Palm Renovate',
         images: [
             {
-                url: `${siteUrl}/images/impact-windows-and-doors/herobanner.webp`,
+                url: `${siteUrl}/images/Impact/hero.webp`,
                 width: 1200,
                 height: 630,
                 alt: 'Impact Windows and Doors Services - Palm Renovate',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Impact Windows and Doors - Palm Renovate',
         description: 'Professional impact windows and doors installation. Hurricane-resistant windows and doors for year-round protection.',
-        images: [`${siteUrl}/images/impact-windows-and-doors/herobanner.webp`],
+        images: [`${siteUrl}/images/Impact/hero.webp`],
     },
     alternates: {
         canonical: `${siteUrl}/services/impact-windows-and-doors`,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 export default function ImpactWindowsAndDoorsPage() {
     // Intro Section Data
     const introSectionData = {
-        imageSrc: '/images/impact-windows-and-doors/impact-windows-intro.webp',
+        imageSrc: '/images/Impact/intro.webp',
         imageAlt: 'Impact windows and doors installation',
         text: 'Always be prepared and stay safe before hurricane season hits. At Palm Development & Renovation Group, we install impact windows and doors that are built for this climate and installed with long-term performance in mind. We work with property owners across Palm Beach and Broward County to upgrade homes with clean, code-compliant installs that offer year-round protection and peace of mind.',
         linkHref: '/services',
@@ -67,6 +67,8 @@ export default function ImpactWindowsAndDoorsPage() {
         paragraphs: [
             'Our Palm Beach impact windows are designed for pressure resistance, heat reduction, and a better indoor feel. They\'re not just about storms — they\'re a year-round upgrade that blocks noise, filters light, and tightens up your home\'s envelope.',
         ],
+        imageSrc: '/images/Impact/Professional.webp',
+        imageAlt: 'Professional impact windows installation',
         services: [
             {
                 title: 'Casement and awning windows',
@@ -203,7 +205,7 @@ export default function ImpactWindowsAndDoorsPage() {
             {/* Hero Section */}
             <PageHero
                 title="Impact Windows and Doors"
-                backgroundImage="/images/impact-windows-and-doors/herobanner.webp"
+                backgroundImage="/images/Impact/hero.webp"
                 backgroundImageAlt="Impact Windows and Doors - Palm Renovate"
             />
 

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         siteName: 'Palm Renovate',
         images: [
             {
-                url: `${siteUrl}/images/complete-home-remodeling/herobanner.webp`,
+                url: `${siteUrl}/images/complete home/hero.webp`,
                 width: 1200,
                 height: 630,
                 alt: 'Complete Home Remodeling Services - Palm Renovate',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Complete Home Remodeling - Palm Renovate',
         description: 'Transform your entire home with our professional complete home remodeling services. Full home renovation, design, and construction.',
-        images: [`${siteUrl}/images/complete-home-remodeling/herobanner.webp`],
+        images: [`${siteUrl}/images/complete home/hero.webp`],
     },
     alternates: {
         canonical: `${siteUrl}/services/complete-home-remodeling`,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 export default function CompleteHomeRemodelingPage() {
     // Intro Section Data
     const introSectionData = {
-        imageSrc: '/images/complete-home-remodeling/home-remodeling-intro.webp',
+        imageSrc: '/images/complete home/intro.webp',
         imageAlt: 'Beautifully remodeled home interior',
         text: 'Your home is your sanctuary. It should reflect your personality and match your lifestyle. If your current home needs a makeover, partner with our team for trustworthy home remodeling services. Palm Development & Renovation Group is here to help you update your home, improve functionality, and design a home that fits your family\'s needs perfectly.',
         linkHref: '/services',
@@ -68,6 +68,8 @@ export default function CompleteHomeRemodelingPage() {
             'Palm Development & Renovation Group offers a full range of home remodeling services to upgrade your home and lifestyle. We specialize in a variety of general remodeling work. Our team is capable of handling any project regardless of complexity and size. We have an in-house team of seasoned experts who will see your project from concept to completion.',
             'We\'ll help you fine-tune your home improvement plan with modern yet functional design ideas to give your home the perfect touch. So whether your goal is to conduct repairs, increase your home\'s value, improve energy efficiency, maximize space, or make your home safer, Palm Development & Renovation Group can help you accomplish that role.',
         ],
+        imageSrc: '/images/complete home/professional.webp',
+        imageAlt: 'Professional home remodeling services',
         services: [
             {
                 title: 'Lighting',
@@ -221,7 +223,7 @@ export default function CompleteHomeRemodelingPage() {
             {/* Hero Section */}
             <PageHero
                 title="Complete Home Remodeling"
-                backgroundImage="/images/complete-home-remodeling/herobanner.webp"
+                backgroundImage="/images/complete home/hero.webp"
                 backgroundImageAlt="Complete Home Remodeling - Palm Renovate"
             />
 
