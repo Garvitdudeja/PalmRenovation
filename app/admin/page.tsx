@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface FormEntry {
   _id: string;
@@ -23,6 +24,10 @@ export default function AdminPage() {
   const [loginError, setLoginError] = useState('');
   const [entries, setEntries] = useState<FormEntry[]>([]);
   const [loadingEntries, setLoadingEntries] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [totalCount, setTotalCount] = useState(0);
+  const entriesPerPage = 10;
 
   useEffect(() => {
     // Check if already authenticated
@@ -31,12 +36,18 @@ export default function AdminPage() {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch('/api/admin/entries', {
+      const response = await fetch('/api/admin/entries?page=1&limit=10', {
         credentials: 'include',
       });
       if (response.ok) {
         setIsAuthenticated(true);
-        fetchEntries();
+        const data = await response.json();
+        setEntries(data.entries);
+        if (data.pagination) {
+          setTotalPages(data.pagination.totalPages);
+          setTotalCount(data.pagination.totalCount);
+          setCurrentPage(data.pagination.page);
+        }
       } else {
         setIsAuthenticated(false);
       }
@@ -65,7 +76,7 @@ export default function AdminPage() {
 
       if (response.ok) {
         setIsAuthenticated(true);
-        fetchEntries();
+        fetchEntries(1);
       } else {
         setLoginError(data.error || 'Invalid credentials');
       }
@@ -83,20 +94,59 @@ export default function AdminPage() {
     setPassword('');
   };
 
-  const fetchEntries = async () => {
+  const fetchEntries = async (page: number = currentPage) => {
     setLoadingEntries(true);
     try {
-      const response = await fetch('/api/admin/entries', {
+      const response = await fetch(`/api/admin/entries?page=${page}&limit=${entriesPerPage}`, {
         credentials: 'include',
       });
       if (response.ok) {
         const data = await response.json();
         setEntries(data.entries);
+        if (data.pagination) {
+          setTotalPages(data.pagination.totalPages);
+          setTotalCount(data.pagination.totalCount);
+          setCurrentPage(data.pagination.page);
+        }
       }
     } catch (error) {
       console.error('Error fetching entries:', error);
     } finally {
       setLoadingEntries(false);
+    }
+  };
+
+  const handlePageChange = (newPage: number) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      fetchEntries(newPage);
+    }
+  };
+
+  const handleDelete = async (id: string) => {
+    if (!confirm('Are you sure you want to delete this entry? This action cannot be undone.')) {
+      return;
+    }
+
+    try {
+      const response = await fetch('/api/admin/entries', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify({ id }),
+      });
+
+      if (response.ok) {
+        // Refresh the current page
+        fetchEntries(currentPage);
+      } else {
+        const data = await response.json();
+        alert(data.error || 'Failed to delete entry');
+      }
+    } catch (error) {
+      console.error('Error deleting entry:', error);
+      alert('Failed to delete entry. Please try again.');
     }
   };
 
@@ -189,10 +239,10 @@ export default function AdminPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-6 flex justify-between items-center">
           <h2 className="text-xl font-semibold text-charcoal-gray">
-            Form Submissions ({entries.length})
+            Form Submissions ({totalCount})
           </h2>
           <button
-            onClick={fetchEntries}
+            onClick={() => fetchEntries(currentPage)}
             disabled={loadingEntries}
             className="bg-ocean-teal text-white px-4 py-2 rounded-lg hover:bg-ocean-teal-700 transition font-semibold disabled:opacity-50"
           >
@@ -230,6 +280,9 @@ export default function AdminPage() {
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                       Message
                     </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Actions
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
@@ -257,10 +310,142 @@ export default function AdminPage() {
                       <td className="px-6 py-4 text-sm text-gray-900 max-w-xs truncate">
                         {entry.message || '-'}
                       </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                        <div className="flex items-center space-x-3">
+                          <Link
+                            href={`/admin/${entry._id}`}
+                            className="text-ocean-teal hover:text-ocean-teal-700 transition"
+                            title="View details"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                              />
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                              />
+                            </svg>
+                          </Link>
+                          <button
+                            onClick={() => handleDelete(entry._id)}
+                            className="text-red-600 hover:text-red-900 transition"
+                            title="Delete entry"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
+            </div>
+          </div>
+        )}
+
+        {/* Pagination */}
+        {entries.length > 0 && totalPages > 1 && (
+          <div className="mt-6 flex items-center justify-between bg-white px-4 py-3 rounded-lg shadow">
+            <div className="flex-1 flex justify-between sm:hidden">
+              <button
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1 || loadingEntries}
+                className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Previous
+              </button>
+              <button
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages || loadingEntries}
+                className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Next
+              </button>
+            </div>
+            <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+              <div>
+                <p className="text-sm text-gray-700">
+                  Showing <span className="font-medium">{(currentPage - 1) * entriesPerPage + 1}</span> to{' '}
+                  <span className="font-medium">
+                    {Math.min(currentPage * entriesPerPage, totalCount)}
+                  </span>{' '}
+                  of <span className="font-medium">{totalCount}</span> results
+                </p>
+              </div>
+              <div>
+                <nav className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                  <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1 || loadingEntries}
+                    className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    Previous
+                  </button>
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => {
+                    // Show first page, last page, current page, and pages around current
+                    if (
+                      pageNum === 1 ||
+                      pageNum === totalPages ||
+                      (pageNum >= currentPage - 1 && pageNum <= currentPage + 1)
+                    ) {
+                      return (
+                        <button
+                          key={pageNum}
+                          onClick={() => handlePageChange(pageNum)}
+                          disabled={loadingEntries}
+                          className={`relative inline-flex items-center px-4 py-2 border text-sm font-medium ${
+                            currentPage === pageNum
+                              ? 'z-10 bg-ocean-teal border-ocean-teal text-white'
+                              : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+                          } disabled:opacity-50 disabled:cursor-not-allowed`}
+                        >
+                          {pageNum}
+                        </button>
+                      );
+                    } else if (pageNum === currentPage - 2 || pageNum === currentPage + 2) {
+                      return (
+                        <span
+                          key={pageNum}
+                          className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700"
+                        >
+                          ...
+                        </span>
+                      );
+                    }
+                    return null;
+                  })}
+                  <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages || loadingEntries}
+                    className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    Next
+                  </button>
+                </nav>
+              </div>
             </div>
           </div>
         )}

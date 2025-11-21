@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import ConditionalLayout from "@/components/ConditionalLayout";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -127,9 +126,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* End Google Tag Manager (noscript) */}
         
         <StructuredData />
-        <Header />
-        {children}
-        <Footer />
+        <ConditionalLayout>
+          {children}
+        </ConditionalLayout>
       </body>
     </html>
   );
