@@ -50,6 +50,7 @@ export async function GET(
       postalCode: entry.postalCode,
       service: entry.service,
       message: entry.message,
+      leadStatus: entry.leadStatus || 'New',
       createdAt: entry.createdAt,
     };
 
@@ -66,3 +67,63 @@ export async function GET(
   }
 }
 
+export async function PATCH(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  try {
+    // Verify admin authentication
+    if (!verifyAdminToken(request)) {
+      return NextResponse.json(
+        { error: 'Unauthorized' },
+        { status: 401 }
+      );
+    }
+
+    const { id } = await params;
+    const body = await request.json();
+    const { leadStatus } = body;
+
+    if (!id) {
+      return NextResponse.json(
+        { error: 'Entry ID is required' },
+        { status: 400 }
+      );
+    }
+
+    if (!leadStatus) {
+      return NextResponse.json(
+        { error: 'Lead status is required' },
+        { status: 400 }
+      );
+    }
+
+    // Get database connection
+    const db = await getDatabase();
+    const collection = db.collection('contact_submissions');
+
+    // Update the entry
+    const result = await collection.updateOne(
+      { _id: new ObjectId(id) },
+      { $set: { leadStatus, updatedAt: new Date() } }
+    );
+
+    if (result.matchedCount === 0) {
+      return NextResponse.json(
+        { error: 'Entry not found' },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json(
+      { success: true, message: 'Lead status updated successfully' },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error('Error updating entry:', error);
+    return NextResponse.json(
+      { error: 'Failed to update entry' },
+      { status: 500 }
+    );
+  }
+}

@@ -28,6 +28,7 @@ export async function POST(request: NextRequest) {
       postalCode: postalCode || '',
       service,
       message: message || '',
+      leadStatus: 'New',
       createdAt: new Date(),
     });
 

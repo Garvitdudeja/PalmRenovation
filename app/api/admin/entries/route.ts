@@ -45,6 +45,7 @@ export async function GET(request: NextRequest) {
       postalCode: entry.postalCode,
       service: entry.service,
       message: entry.message,
+      leadStatus: entry.leadStatus || 'New',
       createdAt: entry.createdAt,
     }));
 
