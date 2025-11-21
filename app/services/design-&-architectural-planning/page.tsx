@@ -105,7 +105,7 @@ export default function DesignArchitecturalPlanningPage() {
         bulletPoints: [
             'We\'re not after projects. We\'re after long-term relationships.',
             'We\'re your single point of contact from concept to occupancy and beyond.',
-            'We\'re licensed (Florida Department of Business and Professional Regulation [DBPR] License number CRC1334770), insured, and certified.',
+            'We\'re licensed (Florida Department of Business and Professional Regulation [DBPR] License number CGC1518106), insured, and certified.',
             'We\'re deeply experienced with a range of project types.',
             'We\'re committed to listening to you, understanding and putting your needs first.',
             'All of our projects are fully warranted for 2 years from completion.',
@@ -127,7 +127,7 @@ export default function DesignArchitecturalPlanningPage() {
                     </svg>
                 ),
                 title: 'Licensed, Insured & Certified',
-                description: 'We\'re licensed (Florida Department of Business and Professional Regulation [DBPR] License number CRC1334770), insured, and certified.',
+                description: 'We\'re licensed (Florida Department of Business and Professional Regulation [DBPR] License number CGC1518106), insured, and certified.',
             },
             {
                 icon: (

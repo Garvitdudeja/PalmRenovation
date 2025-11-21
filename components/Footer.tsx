@@ -64,7 +64,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="text-sm text-gray-400 mt-4">
-                <strong>License number:</strong> <em>CRC1334770</em>
+                <strong>License number:</strong> <em>CGC1518106</em>
               </li>
             </ul>
           </div>
