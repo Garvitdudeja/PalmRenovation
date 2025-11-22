@@ -1,10 +1,19 @@
 'use client';
 
-import { useState, useId } from 'react';
+import { useState, useId, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface ContactFormProps {
   variant?: 'default' | 'light';
+}
+
+interface UTMParams {
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  utm_term?: string;
+  utm_content?: string;
+  gclid?: string; // Google Click ID for Google Ads
 }
 
 export default function ContactForm({ variant = 'default' }: ContactFormProps) {
@@ -23,11 +32,61 @@ export default function ContactForm({ variant = 'default' }: ContactFormProps) {
     service: '',
     message: '',
   });
+  const [utmParams, setUtmParams] = useState<UTMParams>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({
     type: null,
     message: '',
   });
+
+  // Capture UTM parameters from URL and store them
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    // Get UTM parameters from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const utm: UTMParams = {};
+    
+    // Check for UTM parameters
+    const utmSource = urlParams.get('utm_source');
+    const utmMedium = urlParams.get('utm_medium');
+    const utmCampaign = urlParams.get('utm_campaign');
+    const utmTerm = urlParams.get('utm_term');
+    const utmContent = urlParams.get('utm_content');
+    const gclid = urlParams.get('gclid'); // Google Click ID
+
+    if (utmSource) utm.utm_source = utmSource;
+    if (utmMedium) utm.utm_medium = utmMedium;
+    if (utmCampaign) utm.utm_campaign = utmCampaign;
+    if (utmTerm) utm.utm_term = utmTerm;
+    if (utmContent) utm.utm_content = utmContent;
+    if (gclid) utm.gclid = gclid;
+
+    // Check localStorage for existing UTM params (persist across page navigation)
+    const storedUtm = localStorage.getItem('utm_params');
+    if (storedUtm) {
+      try {
+        const parsed = JSON.parse(storedUtm);
+        // If we have new UTM params in URL, use those; otherwise keep stored ones
+        if (Object.keys(utm).length > 0) {
+          setUtmParams(utm);
+          localStorage.setItem('utm_params', JSON.stringify(utm));
+        } else {
+          setUtmParams(parsed);
+        }
+      } catch {
+        // If stored data is invalid, use URL params or empty
+        if (Object.keys(utm).length > 0) {
+          setUtmParams(utm);
+          localStorage.setItem('utm_params', JSON.stringify(utm));
+        }
+      }
+    } else if (Object.keys(utm).length > 0) {
+      // No stored params, but we have URL params - save them
+      setUtmParams(utm);
+      localStorage.setItem('utm_params', JSON.stringify(utm));
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -43,12 +102,18 @@ export default function ContactForm({ variant = 'default' }: ContactFormProps) {
     setSubmitStatus({ type: null, message: '' });
 
     try {
+      // Include UTM parameters in the submission
+      const submissionData = {
+        ...formData,
+        utmParams: Object.keys(utmParams).length > 0 ? utmParams : undefined,
+      };
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submissionData),
       });
 
       const data = await response.json();

@@ -4,7 +4,7 @@ import { getDatabase } from '@/lib/mongodb';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, phone, address, postalCode, service, message } = body;
+    const { firstName, lastName, email, phone, address, postalCode, service, message, utmParams } = body;
 
     // Validate required fields
     if (!firstName || !email || !phone || !service) {
@@ -18,8 +18,8 @@ export async function POST(request: NextRequest) {
     const db = await getDatabase();
     const collection = db.collection('contact_submissions');
 
-    // Insert the submission
-    const result = await collection.insertOne({
+    // Prepare submission data
+    const submissionData: any = {
       firstName,
       lastName: lastName || '',
       email,
@@ -30,7 +30,26 @@ export async function POST(request: NextRequest) {
       message: message || '',
       leadStatus: 'New',
       createdAt: new Date(),
-    });
+    };
+
+    // Add UTM tracking data if present
+    if (utmParams) {
+      submissionData.utmSource = utmParams.utm_source || null;
+      submissionData.utmMedium = utmParams.utm_medium || null;
+      submissionData.utmCampaign = utmParams.utm_campaign || null;
+      submissionData.utmTerm = utmParams.utm_term || null;
+      submissionData.utmContent = utmParams.utm_content || null;
+      submissionData.gclid = utmParams.gclid || null; // Google Click ID
+      
+      // Determine if this is from Google Ads
+      submissionData.isGoogleAds = 
+        (utmParams.utm_source?.toLowerCase() === 'google' && 
+         utmParams.utm_medium?.toLowerCase() === 'cpc') ||
+        !!utmParams.gclid;
+    }
+
+    // Insert the submission
+    const result = await collection.insertOne(submissionData);
 
     return NextResponse.json(
       { 

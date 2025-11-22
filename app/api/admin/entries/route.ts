@@ -47,6 +47,13 @@ export async function GET(request: NextRequest) {
       message: entry.message,
       leadStatus: entry.leadStatus || 'New',
       createdAt: entry.createdAt,
+      utmSource: entry.utmSource || null,
+      utmMedium: entry.utmMedium || null,
+      utmCampaign: entry.utmCampaign || null,
+      utmTerm: entry.utmTerm || null,
+      utmContent: entry.utmContent || null,
+      gclid: entry.gclid || null,
+      isGoogleAds: entry.isGoogleAds || false,
     }));
 
     const totalPages = Math.ceil(totalCount / limit);
