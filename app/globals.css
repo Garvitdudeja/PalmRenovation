@@ -6,17 +6,17 @@
 }
 
 @theme {
-  --color-ocean-teal-50: #F1FAEE;
-  --color-ocean-teal-100: #D8F3DC;
-  --color-ocean-teal-200: #B7E4C7;
-  --color-ocean-teal-300: #95D5B2;
-  --color-ocean-teal-400: #74C69D;
-  --color-ocean-teal-500: #52B788;
-  --color-ocean-teal-600: #40916C;
-  --color-ocean-teal-700: #2D6A4F;
-  --color-ocean-teal-800: #1B4332;
-  --color-ocean-teal-900: #081C15;
-  --color-ocean-teal: #52B788;
+  --color-ocean-teal-50: #F0F9F4;
+  --color-ocean-teal-100: #D4EDDC;
+  --color-ocean-teal-200: #A8DBB8;
+  --color-ocean-teal-300: #7CC994;
+  --color-ocean-teal-400: #50B770;
+  --color-ocean-teal-500: #2E8B57;
+  --color-ocean-teal-600: #256F45;
+  --color-ocean-teal-700: #1C5333;
+  --color-ocean-teal-800: #133721;
+  --color-ocean-teal-900: #0A1B0F;
+  --color-ocean-teal: #2E8B57;
   
   --color-charcoal-gray-50: #E6E6E6;
   --color-charcoal-gray-100: #CCCCCC;
@@ -29,6 +29,45 @@
   --color-charcoal-gray-800: #161616;
   --color-charcoal-gray-900: #0A0A0A;
   --color-charcoal-gray: #3C3C3C;
+  
+  /* Palm Tree Leaf Gradient Colors */
+  --gradient-palm-start: #0F4A2A;
+  --gradient-palm-mid: #2E8B57;
+  --gradient-palm-end: #D4F4E0;
+}
+
+/* Gradient utility classes for palm tree leaf transitions */
+.bg-gradient-palm {
+  background: linear-gradient(135deg, var(--gradient-palm-start) 0%, var(--gradient-palm-mid) 50%, var(--gradient-palm-end) 100%);
+}
+
+.bg-gradient-palm-hover {
+  background: linear-gradient(135deg, var(--gradient-palm-mid) 0%, var(--gradient-palm-end) 50%, #0F2A1A 100%);
+}
+
+.text-gradient-palm {
+  background: linear-gradient(135deg, var(--gradient-palm-start) 0%, var(--gradient-palm-mid) 50%, var(--gradient-palm-end) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Button gradient with slow transition */
+.btn-gradient-palm {
+  background: linear-gradient(135deg, var(--gradient-palm-start) 0%, var(--gradient-palm-mid) 50%, var(--gradient-palm-end) 100%);
+  transition: background 0.8s ease, transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.btn-gradient-palm:hover {
+  background: linear-gradient(135deg, var(--gradient-palm-mid) 0%, var(--gradient-palm-end) 50%, #0F2A1A 100%);
+}
+
+/* Slow transitions for ocean-teal buttons and links */
+button.bg-ocean-teal,
+a.bg-ocean-teal,
+button[class*="bg-ocean-teal"],
+a[class*="bg-ocean-teal"] {
+  transition: background-color 0.8s ease, background 0.8s ease, color 0.8s ease, transform 0.8s ease, box-shadow 0.8s ease, border-color 0.8s ease !important;
 }
 
 body {

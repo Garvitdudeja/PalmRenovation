@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,8 +34,18 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className={`text-2xl md:text-[1.34rem] font-bold transition ${shouldShowWhiteBg ? 'text-ocean-teal hover:text-ocean-teal-700' : 'text-white hover:text-ocean-teal-200'}`}>
-            Palm Development & Renovation Group
+          <Link href="/" className="flex items-center h-full gap-3">
+            <Image
+              src="/images/logo.png"
+              alt="Palm Development & Renovation Group Logo"
+              width={200}
+              height={80}
+              className="h-16 md:h-20 w-auto object-contain"
+              priority
+            />
+            <span className={`font-bold transition leading-tight ${shouldShowWhiteBg ? 'text-ocean-teal' : 'text-white'}`} style={{ fontSize: '23px' }}>
+              Palm Development<br />& Renovation Group
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -83,7 +94,7 @@ const Header = () => {
             </Link>
             <a
               href="tel:813-838-2193"
-              className="bg-ocean-teal text-white px-5 py-2 rounded-lg hover:bg-ocean-teal-700 transition font-semibold text-sm whitespace-nowrap"
+              className="btn-gradient-palm text-white px-5 py-2 rounded-lg transition font-semibold text-sm whitespace-nowrap"
             >
               CALL US: 813-838-2193
             </a>
@@ -158,7 +169,7 @@ const Header = () => {
               </Link>
               <a
                 href="tel:813-838-2193"
-                className="bg-ocean-teal text-white px-6 py-3 rounded-lg hover:bg-ocean-teal-700 transition font-semibold text-center"
+                className="btn-gradient-palm text-white px-6 py-3 rounded-lg transition font-semibold text-center"
               >
                 CALL US: 813-838-2193
               </a>

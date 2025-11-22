@@ -19,7 +19,7 @@ export default function BuildDreamSection({ title, paragraph, linkHref, linkText
                 </p>
                 <Link
                     href={linkHref}
-                    className="inline-block bg-ocean-teal text-white px-8 py-4 rounded-lg hover:bg-ocean-teal-700 transition font-semibold text-lg"
+                    className="inline-block btn-gradient-palm text-white px-8 py-4 rounded-lg transition font-semibold text-lg"
                 >
                     {linkText}
                 </Link>

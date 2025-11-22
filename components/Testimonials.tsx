@@ -96,7 +96,7 @@ const Testimonials = () => {
               <div className="flex">{renderStars(5)}</div>
               <span className="text-lg text-charcoal-gray font-semibold uppercase">Positive Reviews</span>
             </div>
-            <button className="bg-ocean-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-ocean-teal-700 transition">
+            <button className="btn-gradient-palm text-white px-6 py-3 rounded-lg font-semibold transition">
               See More
             </button>
           </div>

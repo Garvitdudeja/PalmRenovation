@@ -29,7 +29,7 @@ const CompanyInfo = () => {
             {/* About Us Button */}
             <Link
               href="/about-us"
-              className="inline-block bg-ocean-teal text-white px-8 py-4 rounded-lg hover:bg-ocean-teal-700 transition font-semibold text-lg shadow-lg hover:shadow-xl self-start"
+              className="inline-block btn-gradient-palm text-white px-8 py-4 rounded-lg transition font-semibold text-lg shadow-lg hover:shadow-xl self-start"
             >
               About Us
             </Link>

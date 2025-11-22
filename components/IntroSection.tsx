@@ -33,7 +33,7 @@ export default function IntroSection({ imageSrc, imageAlt, text, linkHref, linkT
                         <div className="mt-6">
                             <Link
                                 href={linkHref}
-                                className="inline-block bg-ocean-teal text-white px-6 py-3 rounded-lg hover:bg-ocean-teal-700 transition font-semibold"
+                                className="inline-block btn-gradient-palm text-white px-6 py-3 rounded-lg transition font-semibold"
                             >
                                 {linkText}
                             </Link>

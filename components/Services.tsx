@@ -116,7 +116,7 @@ const Services = () => {
                 <div className="text-center">
                     <Link
                         href="/services"
-                        className="inline-block bg-ocean-teal text-white px-8 py-3 rounded-lg hover:bg-ocean-teal-700 transition font-semibold"
+                        className="inline-block btn-gradient-palm text-white px-8 py-3 rounded-lg transition font-semibold"
                     >
                         View All Services
                     </Link>
