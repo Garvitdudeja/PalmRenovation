@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/mongodb';
+import { sendLeadNotificationSMS } from '@/lib/twilio';
 
 export async function POST(request: NextRequest) {
   try {
@@ -50,6 +51,21 @@ export async function POST(request: NextRequest) {
 
     // Insert the submission
     const result = await collection.insertOne(submissionData);
+
+    // Send SMS notification (non-blocking - don't fail if SMS fails)
+    sendLeadNotificationSMS({
+      firstName: submissionData.firstName,
+      lastName: submissionData.lastName,
+      email: submissionData.email,
+      phone: submissionData.phone,
+      service: submissionData.service,
+      message: submissionData.message,
+      address: submissionData.address,
+      postalCode: submissionData.postalCode,
+    }).catch((error) => {
+      console.error('Failed to send SMS notification:', error);
+      // Continue even if SMS fails
+    });
 
     return NextResponse.json(
       { 
